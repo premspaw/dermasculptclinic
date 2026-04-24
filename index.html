@@ -1278,10 +1278,10 @@ footer{
 
 <!-- STATS -->
 <div class="stats-bar">
-  <div class="stat-cell"><div class="stat-num">18+</div><div class="stat-label">Years Experience</div></div>
-  <div class="stat-cell"><div class="stat-num">20k+</div><div class="stat-label">Patients Treated</div></div>
-  <div class="stat-cell"><div class="stat-num">25+</div><div class="stat-label">Treatments Offered</div></div>
-  <div class="stat-cell"><div class="stat-num">4.9★</div><div class="stat-label">Patient Rating</div></div>
+  <div class="stat-cell"><div class="stat-num" data-target="18" data-suffix="+">0</div><div class="stat-label">Years Experience</div></div>
+  <div class="stat-cell"><div class="stat-num" data-target="20" data-suffix="k+">0</div><div class="stat-label">Patients Treated</div></div>
+  <div class="stat-cell"><div class="stat-num" data-target="25" data-suffix="+">0</div><div class="stat-label">Treatments Offered</div></div>
+  <div class="stat-cell"><div class="stat-num" data-target="4.9" data-suffix="★" data-decimals="1">0</div><div class="stat-label">Patient Rating</div></div>
 </div>
 
 <!-- TREATMENTS -->
@@ -1721,6 +1721,43 @@ window.addEventListener('scroll', () => {
   
   lastScroll = currentScroll;
 });
+
+// ROLLING NUMBERS ANIMATION
+const stats = document.querySelectorAll('.stat-num');
+const statObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      const target = parseFloat(entry.target.getAttribute('data-target'));
+      const suffix = entry.target.getAttribute('data-suffix') || '';
+      const decimals = parseInt(entry.target.getAttribute('data-decimals')) || 0;
+      let count = 0;
+      const duration = 1500; // 1.5 seconds
+      const startTime = performance.now();
+      
+      const animate = (currentTime) => {
+        const elapsed = currentTime - startTime;
+        const progress = Math.min(elapsed / duration, 1);
+        
+        // Easing function: outExpo
+        const ease = progress === 1 ? 1 : 1 - Math.pow(2, -10 * progress);
+        const currentValue = ease * target;
+        
+        entry.target.innerText = currentValue.toFixed(decimals) + suffix;
+        
+        if (progress < 1) {
+          requestAnimationFrame(animate);
+        } else {
+          entry.target.innerText = target.toFixed(decimals) + suffix;
+        }
+      };
+      
+      requestAnimationFrame(animate);
+      statObserver.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.5 });
+
+stats.forEach(stat => statObserver.observe(stat));
 </script>
 <div class="sticky-cta">
   <a href="tel:+919916906661" class="btn-sticky">Call Clinic Now</a>
