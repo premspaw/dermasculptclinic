@@ -1045,17 +1045,18 @@ footer{
   .nav-links li{width:100%;}
   .mega-menu{display:none !important;}
   .nav-tel{display:none}
-  .hero{grid-template-columns:1fr; padding-top:56px;}
-  .hero-right{display:block; height:auto;}
+  .hero{display:flex !important; flex-direction:column; height:auto !important; min-height:auto !important; padding-top:56px;}
+  .hero-right{order:1; display:block; height:auto; width:100%;}
   .hero-carousel{height:55vw; min-height:280px; max-height:400px;}
   .carousel-img{object-fit:cover; object-position:top center;}
-  .carousel-info-area{padding:1rem 1.5rem;}
+  .carousel-info-area{padding:1rem 1.5rem; border-bottom:1px solid rgba(255,255,255,0.1);}
   .glass-details{padding:0.8rem 1rem;}
-  .hero-left{padding:2rem 1.5rem 1.5rem;}
-  .hero-left h1{font-size:clamp(1.8rem,7vw,3rem);}
-  .hero-sub{font-size:0.9rem;}
-  .hero-btns{flex-direction:column; gap:0.75rem;}
+  .hero-left{order:2; padding:1.5rem; width:100%; display:flex; flex-direction:column;}
+  .hero-btns{order:1; margin-top:0.5rem; flex-direction:column; gap:0.75rem;}
   .btn-primary,.btn-ghost-light{width:100%; text-align:center;}
+  .hero-chip{order:2; margin-top:1.5rem; margin-bottom:0.5rem;}
+  .hero-left h1{order:3; font-size:clamp(1.8rem,7vw,2.5rem); margin-bottom:0.5rem;}
+  .hero-sub{order:4; font-size:0.9rem; margin-top:0;}
   .hero-badges{flex-wrap:nowrap; gap:0.4rem; justify-content: space-between;}
   .h-badge{flex: 1; padding: 0.5rem 0.2rem; min-width: 0; flex-direction: column; text-align: center; gap: 0.2rem;}
   .h-badge-icon{font-size: 0.85rem;}
