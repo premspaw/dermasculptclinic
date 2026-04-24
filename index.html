@@ -1705,8 +1705,11 @@ if(slides.length > 0) {
 let lastScroll = 0;
 const nav = document.querySelector('nav');
 window.addEventListener('scroll', () => {
-  const currentScroll = window.pageYOffset;
-  if (currentScroll > lastScroll && currentScroll > 64) {
+  const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+  const navLinks = document.querySelector('.nav-links');
+  const isMenuOpen = navLinks && navLinks.classList.contains('active');
+  
+  if (currentScroll > lastScroll && currentScroll > 64 && !isMenuOpen) {
     nav.classList.add('nav-hidden');
   } else {
     nav.classList.remove('nav-hidden');
