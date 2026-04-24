@@ -1084,6 +1084,20 @@ footer{
   .sec-title{font-size:clamp(1.6rem,5vw,2.2rem);}
   .btn-book{display:none;}
   .btn-call{display:inline-block; font-size:0.65rem; padding:0.5rem 0.8rem;}
+  .sticky-cta{
+    position:fixed;bottom:0;left:0;right:0;
+    background:rgba(11,31,58,0.95);backdrop-filter:blur(10px);
+    padding:0.75rem 1rem;border-top:1px solid rgba(255,255,255,0.1);
+    z-index:99;display:flex;justify-content:center;
+    transform:translateY(100%);transition:transform 0.3s ease;
+  }
+  .sticky-cta.show{transform:translateY(0);}
+  .btn-sticky{
+    width:100%;background:var(--mint);color:var(--navy);
+    padding:0.8rem;border-radius:6px;text-align:center;
+    font-weight:700;text-decoration:none;text-transform:uppercase;
+    letter-spacing:0.05em;font-size:0.85rem;box-shadow:0 4px 15px rgba(61,191,160,0.3);
+  }
 }
 </style>
 </head>
@@ -1697,9 +1711,21 @@ window.addEventListener('scroll', () => {
   } else {
     nav.classList.remove('nav-hidden');
   }
+  
+  // Sticky CTA logic
+  const stickyCta = document.querySelector('.sticky-cta');
+  if (currentScroll > 500) {
+    stickyCta.classList.add('show');
+  } else {
+    stickyCta.classList.remove('show');
+  }
+  
   lastScroll = currentScroll;
 });
 </script>
+<div class="sticky-cta">
+  <a href="tel:+919916906661" class="btn-sticky">Call Clinic Now</a>
+</div>
 <script src="https://widgets.leadconnectorhq.com/loader.js" data-resources-url="https://widgets.leadconnectorhq.com/chat-widget/loader.js" data-widget-id="69908d356dc9bb347caf5048"></script>
 </body>
 </html>
