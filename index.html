@@ -1045,18 +1045,17 @@ footer{
   .nav-links li{width:100%;}
   .mega-menu{display:none !important;}
   .nav-tel{display:none}
-  .hero{display:flex !important; flex-direction:column; height:auto !important; min-height:auto !important; padding-top:56px;}
-  .hero-right{order:1; display:block; height:auto; width:100%; min-height:auto !important;}
-  .hero-carousel{height:55vw; min-height:280px; max-height:400px; flex:none !important;}
-  .carousel-img{object-fit:cover; object-position:top center;}
-  .carousel-info-area{padding:1rem 1.5rem; border-bottom:1px solid rgba(255,255,255,0.1);}
-  .glass-details{padding:0.8rem 1rem;}
-  .hero-left{order:2; padding:1.5rem; width:100%; display:flex; flex-direction:column;}
-  .hero-btns{order:1; margin-top:0.5rem; flex-direction:column; gap:0.75rem;}
+  .hero{display:flex !important; flex-direction:column; height:auto !important; min-height:auto !important; padding-top:56px; background:var(--navy);}
+  .hero-left, .hero-right{display:contents !important;}
+  .hero-left h1{order:1; display:block; padding:1.5rem 1.5rem 0.5rem; font-size:clamp(2rem,8vw,2.8rem); margin:0;}
+  .hero-sub{order:2; display:block; padding:0 1.5rem 1rem; font-size:0.95rem; color:rgba(255,255,255,0.6); margin:0;}
+  .hero-right > * {order:3;} /* Carousel and Case info */
+  .hero-carousel{order:3; height:55vw; min-height:280px; max-height:400px; display:block; position:relative;}
+  .carousel-info-area{order:4; padding:1rem 1.5rem; border-bottom:1px solid rgba(255,255,255,0.1); display:block; position:relative;}
+  .hero-btns{order:5; display:flex; flex-direction:column; gap:0.75rem; padding:1.5rem 1.5rem 0.5rem;}
   .btn-primary,.btn-ghost-light{width:100%; text-align:center;}
-  .hero-chip{order:2; margin-top:1.5rem; margin-bottom:0.5rem;}
-  .hero-left h1{order:3; font-size:clamp(1.8rem,7vw,2.5rem); margin-bottom:0.5rem;}
-  .hero-sub{order:4; font-size:0.9rem; margin-top:0;}
+  .hero-badges{order:6; display:flex; flex-wrap:nowrap; gap:0.4rem; justify-content: space-between; padding:0.5rem 1.5rem 2rem;}
+  .hero-chip{display:none;} /* Hidden on mobile to save space since H1 is at top */
   .hero-badges{flex-wrap:nowrap; gap:0.4rem; justify-content: space-between;}
   .h-badge{flex: 1; padding: 0.5rem 0.2rem; min-width: 0; flex-direction: column; text-align: center; gap: 0.2rem;}
   .h-badge-icon{font-size: 0.85rem;}
