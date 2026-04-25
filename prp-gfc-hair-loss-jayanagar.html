@@ -88,8 +88,25 @@
     "@id": "https://www.dermasculptclinic.com/#clinic"
   },
   "offers": {
-    "@type": "Offer",
+    "@type": "AggregateOffer",
     "priceCurrency": "INR",
+    "lowPrice": "6000",
+    "highPrice": "7000",
+    "offerCount": "2",
+    "offers": [
+      {
+        "@type": "Offer",
+        "name": "PRP Hair Loss Treatment",
+        "price": "6000",
+        "priceCurrency": "INR"
+      },
+      {
+        "@type": "Offer",
+        "name": "GFC Hair Loss Treatment",
+        "price": "7000",
+        "priceCurrency": "INR"
+      }
+    ],
     "availability": "https://schema.org/InStock",
     "url": "https://www.dermasculptclinic.com/prp-gfc-hair-loss-jayanagar.html",
     "seller": {
@@ -731,6 +748,7 @@ footer{
         <li><a href="dermasculpt-v3.html#about">About Us</a></li>
         <li><a href="dermasculpt-v3.html#results">Real Results</a></li>
         <li><a href="dermasculpt-v3.html#testimonials">Testimonials</a></li>
+        <li><a href="pricing.html">Full Price List</a></li>
         <li><a href="dermasculpt-v3.html#contact">Contact Us</a></li>
         <li><a href="#">Privacy Policy</a></li>
       </ul>

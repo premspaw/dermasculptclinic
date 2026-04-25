@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Clinic Price List & Treatment Cost | Dermasculpt Jayanagar Bangalore</title>
+<meta name="description" content="View the full price list for skin, hair, and laser treatments at Dermasculpt Clinic, Jayanagar, Bangalore. Transparent pricing for PRP, Laser Hair Removal, Botox, and more.">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500&family=Manrope:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+/* REUSING GLOBAL STYLES */
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --navy:#0b1f3a;
+  --navy-mid:#102847;
+  --navy-light:#1a3a5c;
+  --cobalt:#1e5fa8;
+  --cobalt-mid:#2470c2;
+  --sky:#4a9fd4;
+  --mint:#3dbfa0;
+  --mint-light:#e8f8f4;
+  --white:#ffffff;
+  --off:#f0f5f8;
+  --text:#0d2135;
+  --body:#3a5570;
+  --muted:#6b8aa0;
+  --border:#ccdce8;
+}
+html{scroll-behavior:smooth}
+body{font-family:'Manrope',sans-serif;background:var(--white);color:var(--text);overflow-x:hidden}
+
+/* NAV */
+nav{
+  position:fixed;top:0;left:0;right:0;z-index:100;
+  height:64px;display:flex;align-items:center;justify-content:space-between;
+  padding:0 5rem;
+  background:var(--navy);
+}
+.nav-brand{display:flex;align-items:center;gap:0.75rem;cursor:pointer}
+.nav-logo-mark{
+  width:34px;height:34px;border-radius:50%;
+  background:var(--mint);
+  display:flex;align-items:center;justify-content:center;
+  font-size:0.75rem;font-weight:700;color:var(--navy);letter-spacing:0.02em;
+}
+.nav-name{font-family:'Playfair Display',serif;font-size:1.2rem;color:#fff;font-weight:400}
+.nav-name span{color:var(--mint)}
+.btn-nav{
+  background:var(--mint);border:none;color:var(--navy);padding:0.5rem 1.3rem;border-radius:4px;
+  font-size:0.75rem;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;cursor:pointer;
+}
+
+/* HEADER */
+.page-header{
+  padding:140px 5rem 60px;
+  background:var(--navy);
+  color:#fff;
+  text-align:center;
+}
+.page-header h1{
+  font-family:'Playfair Display',serif;
+  font-size:clamp(2.5rem,5vw,3.5rem);
+  margin-bottom:1rem;
+}
+.page-header p{
+  color:rgba(255,255,255,0.6);
+  max-width:600px;
+  margin:0 auto;
+  font-size:1.1rem;
+}
+
+/* PRICING CONTENT */
+.pricing-section{
+  padding:80px 5rem;
+  max-width:1200px;
+  margin:0 auto;
+}
+
+.category-block{
+  margin-bottom:4rem;
+}
+.category-title{
+  font-family:'Playfair Display',serif;
+  font-size:2rem;
+  color:var(--navy);
+  margin-bottom:2rem;
+  display:flex;
+  align-items:center;
+  gap:1rem;
+}
+.category-title::after{
+  content:'';
+  flex:1;
+  height:1px;
+  background:var(--border);
+}
+
+.price-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:1.5rem;
+}
+
+.price-item{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:1.2rem;
+  background:var(--white);
+  border:1px solid var(--border);
+  border-radius:12px;
+  transition:all 0.3s;
+}
+.price-item:hover{
+  border-color:var(--mint);
+  box-shadow:0 10px 30px rgba(11,31,58,0.05);
+  transform:translateY(-2px);
+}
+.service-info{
+  display:flex;
+  flex-direction:column;
+  gap:0.25rem;
+}
+.service-name{
+  font-weight:700;
+  color:var(--navy);
+  font-size:1.05rem;
+}
+.service-note{
+  font-size:0.8rem;
+  color:var(--muted);
+}
+.price-value{
+  font-family:'Playfair Display',serif;
+  font-size:1.2rem;
+  font-weight:700;
+  color:var(--mint);
+}
+
+/* FOOTER */
+footer{
+  background:var(--navy);
+  color:rgba(255,255,255,0.6);
+  padding:6rem 5rem 2rem;
+}
+.footer-grid{
+  display:grid;
+  grid-template-columns: 1.5fr 1fr 1fr 1fr;
+  gap:4rem;
+  max-width:1200px;margin:0 auto 4rem;
+}
+.footer-brand h3{font-family:'Playfair Display',serif;font-size:1.8rem;color:#fff;margin-bottom:1.5rem}
+.footer-brand span{color:var(--mint)}
+.footer-col h4{font-size:0.7rem;font-weight:700;text-transform:uppercase;color:var(--mint);margin-bottom:2rem}
+.footer-links{list-style:none}
+.footer-links li{margin-bottom:1rem}
+.footer-links a{color:rgba(255,255,255,0.5);text-decoration:none;font-size:0.9rem;transition:color 0.2s}
+.footer-links a:hover{color:#fff}
+
+@media(max-width:960px){
+  nav, .page-header, .pricing-section, footer{padding:1.5rem}
+  .page-header{padding-top:100px}
+  .price-grid{grid-template-columns:1fr}
+  .footer-grid{grid-template-columns:1fr;text-align:center}
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-brand" onclick="location.href='index.html'">
+    <div class="nav-logo-mark">DS</div>
+    <div class="nav-name">Derma<span>sculpt</span></div>
+  </div>
+  <button class="btn-nav" onclick="window.open('https://link.dermasculptclinic.in/widget/booking/lrZCmPiflNmoq0yuPjp9')">Book Consultation</button>
+</nav>
+
+<header class="page-header">
+  <h1>Treatment Price List</h1>
+  <p>Transparent pricing for premium dermatological care. All procedures are performed under expert medical supervision.</p>
+</header>
+
+<main class="pricing-section">
+
+  <!-- Category 1 -->
+  <div class="category-block">
+    <h2 class="category-title">Consultation & Diagnostics</h2>
+    <div class="price-grid">
+      <div class="price-item">
+        <div class="service-info">
+          <span class="service-name">Doctor Consultation</span>
+          <span class="service-note">Per visit with Dr. Deepak Devkar</span>
+        </div>
+        <span class="price-value">₹800</span>
+      </div>
+      <div class="price-item">
+        <div class="service-info">
+          <span class="service-name">Computerized Hair Analysis</span>
+          <span class="service-note">Advanced diagnostic scan</span>
+        </div>
+        <span class="price-value">₹500</span>
+      </div>
+      <div class="price-item">
+        <div class="service-info">
+          <span class="service-name">Skin Biopsy</span>
+          <span class="service-note">Medical diagnostic procedure</span>
+        </div>
+        <span class="price-value">₹5000</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Category 2 -->
+  <div class="category-block">
+    <h2 class="category-title">Hair Treatments & Restoration</h2>
+    <div class="price-grid">
+      <div class="price-item">
+        <div class="service-info">
+          <span class="service-name">GFC for Hair Loss</span>
+          <span class="service-note">Growth Factor Concentrate / Session</span>
+        </div>
+        <span class="price-value">₹7000</span>
+      </div>
+      <div class="price-item">
+        <div class="service-info">
+          <span class="service-name">PRP for Hair Loss</span>
+          <span class="service-note">Platelet-Rich Plasma / Session</span>
+        </div>
+        <span class="price-value">₹6000</span>
+      </div>
+      <div class="price-item">
+        <div class="service-info">
+          <span class="service-name">Hair Transplantation</span>
+          <span class="service-note">Scalp or Body / Per Follicle</span>
+        </div>
+        <span class="price-value">₹50</span>
+      </div>
+      <div class="price-item">
+        <div class="service-info">
+          <span class="service-name">Mesotherapy</span>
+          <span class="service-note">Hair Fall Control / Session</span>
+        </div>
+        <span class="price-value">₹2500</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Category 3 -->
+  <div class="category-block">
+    <h2 class="category-title">Anti-Aging & Injectables</h2>
+    <div class="price-grid">
+      <div class="price-item">
+        <div class="service-info">
+          <span class="service-name">Anti-Aging: Botox</span>
+          <span class="service-note">US FDA Approved / Per unit</span>
+        </div>
+        <span class="price-value">₹500</span>
+      </div>
+      <div class="price-item">
+        <div class="service-info">
+          <span class="service-name">Anti-Aging: Dermal Fillers</span>
+          <span class="service-note">Hyaluronic Acid / Per ml</span>
+        </div>
+        <span class="price-value">₹30,000</span>
+      </div>
+      <div class="price-item">
+        <div class="service-info">
+          <span class="service-name">FORMA Skin Tightening</span>
+          <span class="service-note">US FDA Technology / Session</span>
+        </div>
+        <span class="price-value">₹5000</span>
+      </div>
+      <div class="price-item">
+        <div class="service-info">
+          <span class="service-name">Threadlift</span>
+          <span class="service-note">Face Lifting / Per Thread</span>
+        </div>
+        <span class="price-value">₹2000+</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Category 4 -->
+  <div class="category-block">
+    <h2 class="category-title">Laser & Aesthetic Skin</h2>
+    <div class="price-grid">
+      <div class="price-item">
+        <div class="service-info">
+          <span class="service-name">Laser Hair Reduction</span>
+          <span class="service-note">Starting Price / Session</span>
+        </div>
+        <span class="price-value">₹1500+</span>
+      </div>
+      <div class="price-item">
+        <div class="service-info">
+          <span class="service-name">Hydrafacial</span>
+          <span class="service-note">Premium Glow Treatment</span>
+        </div>
+        <span class="price-value">₹4000</span>
+      </div>
+      <div class="price-item">
+        <div class="service-info">
+          <span class="service-name">Chemical Peels</span>
+          <span class="service-note">Face or Targeted Areas</span>
+        </div>
+        <span class="price-value">₹2500</span>
+      </div>
+      <div class="price-item">
+        <div class="service-info">
+          <span class="service-name">Skin Lightening</span>
+          <span class="service-note">Full Protocol / Session</span>
+        </div>
+        <span class="price-value">₹5000</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Category 5 -->
+  <div class="category-block">
+    <h2 class="category-title">Acne, Scars & Specialized</h2>
+    <div class="price-grid">
+      <div class="price-item">
+        <div class="service-info">
+          <span class="service-name">Acne Laser</span>
+          <span class="service-note">Active Bacteria Control / Session</span>
+        </div>
+        <span class="price-value">₹5000</span>
+      </div>
+      <div class="price-item">
+        <div class="service-info">
+          <span class="service-name">Laser Scar Removal</span>
+          <span class="service-note">Per Inch / Session</span>
+        </div>
+        <span class="price-value">₹1000</span>
+      </div>
+      <div class="price-item">
+        <div class="service-info">
+          <span class="service-name">Mole Removal</span>
+          <span class="service-note">Laser Technique / Each</span>
+        </div>
+        <span class="price-value">₹3000</span>
+      </div>
+      <div class="price-item">
+        <div class="service-info">
+          <span class="service-name">Warts/Skin Tag</span>
+          <span class="service-note">Small Size / Each</span>
+        </div>
+        <span class="price-value">₹500</span>
+      </div>
+    </div>
+  </div>
+
+</main>
+
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <h3>Derma<span>sculpt</span></h3>
+      <p>Premium Skin & Laser Clinic in Jayanagar, Bangalore. Led by Dr. Deepak Devkar.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Treatments</h4>
+      <ul class="footer-links">
+        <li><a href="laser-hair-removal-jayanagar.html">Laser Hair Removal</a></li>
+        <li><a href="pimples-acne-treatment-jayanagar.html">Acne Management</a></li>
+        <li><a href="prp-gfc-hair-loss-jayanagar.html">Hair Restoration</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Navigation</h4>
+      <ul class="footer-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="pricing.html">Pricing</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <div style="font-size:0.9rem;line-height:1.6">
+        Jayanagar 4th Block,<br>Bangalore 560011<br>
+        <strong>+91 99169 06661</strong>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
