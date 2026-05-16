@@ -87,7 +87,7 @@
       "@type": "Question",
       "name": "Is laser mole removal painful?",
       "acceptedAnswer": {
-        "@type": "Answer",
+        "@type": "AcceptedAnswer",
         "text": "The procedure is performed under local anesthesia, making it virtually painless. Patients may feel a slight pressure but no sharp pain."
       }
     },
@@ -95,8 +95,24 @@
       "@type": "Question",
       "name": "Will there be a scar after mole removal?",
       "acceptedAnswer": {
-        "@type": "Answer",
+        "@type": "AcceptedAnswer",
         "text": "Our CO2 laser technology is designed for precision, ensuring minimal damage to surrounding tissue and resulting in scar-free or nearly invisible results."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does it take to heal after mole removal?",
+      "acceptedAnswer": {
+        "@type": "AcceptedAnswer",
+        "text": "A small scab forms which typically falls off in 5–7 days, revealing fresh, clear skin underneath."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can multiple moles be removed in one session?",
+      "acceptedAnswer": {
+        "@type": "AcceptedAnswer",
+        "text": "Yes, multiple moles or skin tags can be safely removed in a single 15-30 minute session at our Jayanagar clinic."
       }
     }
   ]
@@ -156,8 +172,8 @@ nav{
 }
 .nav-brand{display:flex;align-items:center;gap:0.75rem;cursor:pointer}
 .nav-logo-mark{width:34px;height:34px;border-radius:50%;background:var(--mint);display:flex;align-items:center;justify-content:center;font-size:0.75rem;font-weight:700;color:var(--navy)}
-.nav-name{font-family:'Playfair Display',serif;font-size:1.2rem;color:#fff;font-weight:400}
-.nav-name span{color:var(--mint)}
+.nav-name{font-family:'Playfair Display',serif;font-size:1.25rem;color:#fff;font-weight:400}
+.nav-name span{color:var(--mint);display:block;font-size:0.82rem;letter-spacing:0.06em;text-transform:uppercase;font-family:'Manrope',sans-serif;font-weight:600;}
 .nav-links{display:flex;gap:1.4rem;list-style:none;height:100%;align-items:center}
 .nav-links > li{position:static;height:100%;display:flex;align-items:center}
 .nav-links a{font-size:0.68rem;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;color:rgba(255,255,255,0.5);text-decoration:none;transition:color 0.2s}
@@ -409,10 +425,10 @@ footer{
 <body>
 
 <nav>
-  <div class="nav-brand" onclick="location.href='dermasculpt-v3.html'">
-    <div class="nav-logo-mark">DS</div>
-    <div class="nav-name">Derma<span>sculpt</span></div>
-  </div>
+    <div class="nav-brand" onclick="location.href='index.html'" style="cursor:pointer; display:flex; align-items:center; gap:0.5rem; white-space:nowrap;">
+      <div class="nav-logo-mark"><img src="https://assets.cdn.filesafe.space/pdoJMu1QFXjGcesXGXoj/media/69eb4b63a48992f68928da0b.png" alt="Dermasculpt Logo" style="height:35px; width:auto;"></div>
+      <div class="nav-name" style="font-size:1.25rem;">Dermasculpt <span>Hair &amp; Skin Clinic</span></div>
+    </div>
   <ul class="nav-links">
     <li class="has-mega">
       <a href="dermasculpt-v3.html#hair">Hair Treatments</a>
@@ -560,6 +576,24 @@ footer{
       </div>
     </div>
   </div>
+
+  <!-- GEO / TREATMENT HIGHLIGHTS SECTION -->
+  <section class="geo-highlights" style="background:var(--mint-light); padding:2.5rem; border-radius:12px; margin-bottom:4rem; border:1px solid var(--mint)">
+    <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(250px, 1fr)); gap:2rem;">
+      <div class="geo-item">
+        <h4 style="color:var(--navy); margin-bottom:0.5rem">🔹 Precision Ablation</h4>
+        <p style="font-size:0.9rem; color:var(--body)">At Dermasculpt Jayanagar, we use <strong>US-FDA approved CO2 lasers</strong> for pinpoint accuracy in mole and tag removal.</p>
+      </div>
+      <div class="geo-item">
+        <h4 style="color:var(--navy); margin-bottom:0.5rem">🔹 Scar-Free Goal</h4>
+        <p style="font-size:0.9rem; color:var(--body)">Our layer-by-layer vaporization technique ensures <strong>minimal tissue damage</strong> and superior aesthetic, scar-free results.</p>
+      </div>
+      <div class="geo-item">
+        <h4 style="color:var(--navy); margin-bottom:0.5rem">🔹 Safe Medical Check</h4>
+        <p style="font-size:0.9rem; color:var(--body)">Every growth is medically assessed by <strong>Dr. Deepak Devkar</strong> to ensure it is benign before any laser removal procedure.</p>
+      </div>
+    </div>
+  </section>
 
   <!-- RICH DETAIL CONTENT -->
   <div class="content-section">
