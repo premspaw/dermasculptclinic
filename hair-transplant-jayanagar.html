@@ -469,6 +469,10 @@ footer{
 .footer-legal{display:flex;gap:2rem}
 .footer-legal a{color:inherit;text-decoration:none}
 
+
+.menu-toggle{display:none;flex-direction:column;gap:5px;cursor:pointer;margin-left:1.5rem;}
+.menu-toggle span{width:24px;height:2px;background:#fff;transition:0.3s;}
+
 @media(max-width:960px){
   nav{padding:0 1.5rem}
   .nav-name{font-size:1.1rem !important;}
@@ -495,10 +499,10 @@ footer{
 <body>
 
 <nav>
-    <div class="nav-brand" onclick="location.href='index.html'" style="cursor:pointer; display:flex; align-items:center; gap:0.5rem; white-space:nowrap;">
-      <div class="nav-logo-mark"><img src="https://assets.cdn.filesafe.space/pdoJMu1QFXjGcesXGXoj/media/69eb4b63a48992f68928da0b.png" alt="Dermasculpt Logo" style="height:35px; width:auto;"></div>
-      <div class="nav-name" style="font-size:1.6rem;">Dermasculpt <span>Hair &amp; Skin Clinic</span></div>
-    </div>
+  <div class="nav-brand" onclick="location.href='index.html'" style="cursor:pointer; display:flex; align-items:center; gap:0.5rem; white-space:nowrap;">
+    <div class="nav-logo-mark"><img src="https://assets.cdn.filesafe.space/pdoJMu1QFXjGcesXGXoj/media/69eb4b63a48992f68928da0b.png" alt="Dermasculpt Logo" style="height:35px; width:auto;"></div>
+    <div class="nav-name" style="font-size:1.6rem;">Dermasculpt <span>Hair &amp; Skin Clinic</span></div>
+  </div>
   <ul class="nav-links">
     <li class="has-mega">
       <a href="index.html#hair">Hair Treatments</a>
@@ -509,7 +513,8 @@ footer{
             <div class="mega-group">
               <div class="mega-group-label">Hair Loss Solutions</div>
               <a href="hair-transplant-jayanagar.html">Hair Transplant (FUE/FUT)</a>
-              <a href="prp-gfc-hair-loss-jayanagar.html">PRP & GFC Therapy</a>
+              <a href="prp-gfc-hair-loss-jayanagar.html">PRP (Platelet-Rich Plasma)</a>
+              <a href="prp-gfc-hair-loss-jayanagar.html">GFC (Growth Factor Concentrate)</a>
             </div>
             <div class="mega-group">
               <div class="mega-group-label">Hair Removal</div>
@@ -518,7 +523,7 @@ footer{
           </div>
           <div class="mega-branding">
             <h4>Best Hair Clinic<br>in Bangalore</h4>
-            <p>Expert restoration for a confident you</p>
+            <p>You're making the right choice</p>
           </div>
         </div>
       </div>
@@ -546,7 +551,7 @@ footer{
           </div>
           <div class="mega-branding">
             <h4>Best Skin Clinic<br>in Bangalore</h4>
-            <p>Flawless skin starts here</p>
+            <p>You're making the right choice</p>
           </div>
         </div>
       </div>
@@ -575,7 +580,7 @@ footer{
           </div>
           <div class="mega-branding">
             <h4>Best Brightening Clinic<br>in Bangalore</h4>
-            <p>Illuminate your natural beauty</p>
+            <p>You're making the right choice</p>
           </div>
         </div>
       </div>
@@ -598,14 +603,20 @@ footer{
           </div>
           <div class="mega-branding">
             <h4>Best Aesthetics Clinic<br>in Bangalore</h4>
-            <p>Timeless beauty with expert care</p>
+            <p>You're making the right choice</p>
           </div>
         </div>
       </div>
     </li>
-    
+
   </ul>
-  <button class="btn-nav" onclick="window.open('https://link.dermasculptclinic.in/widget/booking/lrZCmPiflNmoq0yuPjp9', 'bookingPopup', 'width=600,height=800,left='+(screen.width/2-300)+',top='+(screen.height/2-400))">Book Now</button>
+  <div class="nav-right" style="display:flex;align-items:center">
+    <button class="btn-nav btn-book" onclick="window.open('https://link.dermasculptclinic.in/widget/booking/lrZCmPiflNmoq0yuPjp9', 'bookingPopup', 'width=600,height=800,left='+(screen.width/2-300)+',top='+(screen.height/2-400))">Book Now</button>
+    <a href="tel:+919916906661" class="btn-nav btn-call">Call Clinic Now</a>
+    <div class="menu-toggle" onclick="document.querySelector('.nav-links').classList.toggle('active')">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
 </nav>
 
 <main class="service-main">

@@ -405,9 +405,39 @@ footer{
 .footer-legal{display:flex;gap:2rem}
 .footer-legal a{color:inherit;text-decoration:none}
 
+
+.menu-toggle{display:none;flex-direction:column;gap:5px;cursor:pointer;margin-left:1.5rem;}
+.menu-toggle span{width:24px;height:2px;background:#fff;transition:0.3s;}
+
 @media(max-width:960px){
-  nav{padding:0 1.5rem}
-  .nav-links{display:none}
+    nav{padding:0 1rem; height:56px;}
+  .nav-brand{gap:0.4rem}
+  .nav-logo-mark{width:32px;height:32px;}
+  .nav-name{font-size:1.1rem !important;}
+  .nav-name span{font-size:0.75rem !important;}
+  .menu-toggle{display:flex;}
+  .nav-links{
+    display:flex !important;
+    position:fixed;top:56px;left:0;right:0;bottom:0;
+    background:var(--navy);flex-direction:column;padding:1.5rem 2rem 5rem 2rem;
+    gap:1.5rem;align-items:flex-start;transform:translateY(-150%);
+    transition:transform 0.3s ease;border-top:1px solid rgba(255,255,255,0.1);
+    z-index:98; overflow-y:auto;
+  }
+  .nav-links.active{transform:translateY(0);}
+  .nav-links li{width:100%;}
+  .mega-menu{
+    display:block !important; position:static; box-shadow:none; 
+    padding:0.5rem 0 0 1rem; background:transparent; 
+    opacity:1; visibility:visible; pointer-events:auto; transform:none;
+  }
+  .mega-inner{grid-template-columns:1fr; padding:0; gap:1rem;}
+  .mega-branding{display:none;}
+  .mega-group{margin-bottom:0.5rem;}
+  .mega-col-title{font-size:0.85rem; margin-bottom:0.4rem; padding-bottom:0.2rem;}
+  .mega-group-label{font-size:0.65rem;}
+  .mega-group a{font-size:0.8rem; padding:0.3rem 0; color:rgba(255,255,255,0.8);}
+  .nav-tel{display:none}
   .service-main{padding:100px 1.5rem 3rem}
   .intro-grid{grid-template-columns:1fr}
   .service-img-container{height:280px}
@@ -429,19 +459,20 @@ footer{
 <body>
 
 <nav>
-    <div class="nav-brand" onclick="location.href='index.html'" style="cursor:pointer; display:flex; align-items:center; gap:0.5rem; white-space:nowrap;">
-      <div class="nav-logo-mark"><img src="https://assets.cdn.filesafe.space/pdoJMu1QFXjGcesXGXoj/media/69eb4b63a48992f68928da0b.png" alt="Dermasculpt Logo" style="height:35px; width:auto;"></div>
-      <div class="nav-name" style="font-size:1.6rem;">Dermasculpt <span>Hair &amp; Skin Clinic</span></div>
-    </div>
+  <div class="nav-brand" onclick="location.href='index.html'" style="cursor:pointer; display:flex; align-items:center; gap:0.5rem; white-space:nowrap;">
+    <div class="nav-logo-mark"><img src="https://assets.cdn.filesafe.space/pdoJMu1QFXjGcesXGXoj/media/69eb4b63a48992f68928da0b.png" alt="Dermasculpt Logo" style="height:35px; width:auto;"></div>
+    <div class="nav-name" style="font-size:1.6rem;">Dermasculpt <span>Hair &amp; Skin Clinic</span></div>
+  </div>
   <ul class="nav-links">
     <li class="has-mega">
-      <a href="dermasculpt-v3.html#hair">Hair Treatments</a>
+      <a href="index.html#hair">Hair Treatments</a>
       <div class="mega-menu">
         <div class="mega-inner">
           <div class="mega-col">
             <div class="mega-col-title">💇 Hair Treatments</div>
             <div class="mega-group">
               <div class="mega-group-label">Hair Loss Solutions</div>
+              <a href="hair-transplant-jayanagar.html">Hair Transplant (FUE/FUT)</a>
               <a href="prp-gfc-hair-loss-jayanagar.html">PRP (Platelet-Rich Plasma)</a>
               <a href="prp-gfc-hair-loss-jayanagar.html">GFC (Growth Factor Concentrate)</a>
             </div>
@@ -450,11 +481,15 @@ footer{
               <a href="laser-hair-removal-jayanagar.html">Laser Hair Reduction</a>
             </div>
           </div>
+          <div class="mega-branding">
+            <h4>Best Hair Clinic<br>in Bangalore</h4>
+            <p>You're making the right choice</p>
+          </div>
         </div>
       </div>
     </li>
     <li class="has-mega">
-      <a href="dermasculpt-v3.html#skin">Skin Texture & Acne</a>
+      <a href="index.html#skin">Skin Texture & Acne</a>
       <div class="mega-menu">
         <div class="mega-inner">
           <div class="mega-col">
@@ -474,11 +509,15 @@ footer{
               <a href="wart-removal-jayanagar.html">Wart Removal</a>
             </div>
           </div>
+          <div class="mega-branding">
+            <h4>Best Skin Clinic<br>in Bangalore</h4>
+            <p>You're making the right choice</p>
+          </div>
         </div>
       </div>
     </li>
     <li class="has-mega">
-      <a href="dermasculpt-v3.html#pigmentation">Pigmentation & Brightening</a>
+      <a href="index.html#pigmentation">Pigmentation & Brightening</a>
       <div class="mega-menu">
         <div class="mega-inner">
           <div class="mega-col">
@@ -499,11 +538,15 @@ footer{
               <a href="laser-tattoo-removal-jayanagar.html">Laser Tattoo Removal</a>
             </div>
           </div>
+          <div class="mega-branding">
+            <h4>Best Brightening Clinic<br>in Bangalore</h4>
+            <p>You're making the right choice</p>
+          </div>
         </div>
       </div>
     </li>
     <li class="has-mega">
-      <a href="dermasculpt-v3.html#anti-aging">Anti-Ageing & Aesthetics</a>
+      <a href="index.html#anti-aging">Anti-Ageing & Aesthetics</a>
       <div class="mega-menu">
         <div class="mega-inner">
           <div class="mega-col">
@@ -515,15 +558,25 @@ footer{
             </div>
             <div class="mega-group">
               <div class="mega-group-label">Skin Tightening</div>
-              <a href="dermasculpt-v3.html#morpheus">Morpheus (Microneedling RF)</a>
+              <a href="index.html#morpheus">Morpheus (Microneedling RF)</a>
             </div>
+          </div>
+          <div class="mega-branding">
+            <h4>Best Aesthetics Clinic<br>in Bangalore</h4>
+            <p>You're making the right choice</p>
           </div>
         </div>
       </div>
     </li>
 
   </ul>
-  <button class="btn-nav" onclick="window.open('https://link.dermasculptclinic.in/widget/booking/lrZCmPiflNmoq0yuPjp9', 'bookingPopup', 'width=600,height=800,left='+(screen.width/2-300)+',top='+(screen.height/2-400))">Book Now</button>
+  <div class="nav-right" style="display:flex;align-items:center">
+    <button class="btn-nav btn-book" onclick="window.open('https://link.dermasculptclinic.in/widget/booking/lrZCmPiflNmoq0yuPjp9', 'bookingPopup', 'width=600,height=800,left='+(screen.width/2-300)+',top='+(screen.height/2-400))">Book Now</button>
+    <a href="tel:+919916906661" class="btn-nav btn-call">Call Clinic Now</a>
+    <div class="menu-toggle" onclick="document.querySelector('.nav-links').classList.toggle('active')">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
 </nav>
 
 <main class="service-main">

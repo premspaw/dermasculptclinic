@@ -170,6 +170,10 @@ footer{
 .footer-links a{color:rgba(255,255,255,0.5);text-decoration:none;font-size:0.9rem;transition:color 0.2s}
 .footer-links a:hover{color:#fff}
 
+
+.menu-toggle{display:none;flex-direction:column;gap:5px;cursor:pointer;margin-left:1.5rem;}
+.menu-toggle span{width:24px;height:2px;background:#fff;transition:0.3s;}
+
 @media(max-width:960px){
   nav, .page-header, .pricing-section, footer{padding:1.5rem}
   .nav-name{font-size:1.1rem !important;}
@@ -183,11 +187,124 @@ footer{
 <body>
 
 <nav>
-  <div class="nav-brand" onclick="location.href='index.html'">
-    <div class="nav-logo-mark">DS</div>
-    <div class="nav-name" style="font-size:1.6rem;">Derma<span>sculpt</span></div>
+  <div class="nav-brand" onclick="location.href='index.html'" style="cursor:pointer; display:flex; align-items:center; gap:0.5rem; white-space:nowrap;">
+    <div class="nav-logo-mark"><img src="https://assets.cdn.filesafe.space/pdoJMu1QFXjGcesXGXoj/media/69eb4b63a48992f68928da0b.png" alt="Dermasculpt Logo" style="height:35px; width:auto;"></div>
+    <div class="nav-name" style="font-size:1.6rem;">Dermasculpt <span>Hair &amp; Skin Clinic</span></div>
   </div>
-  <button class="btn-nav" onclick="window.open('https://link.dermasculptclinic.in/widget/booking/lrZCmPiflNmoq0yuPjp9')">Book Consultation</button>
+  <ul class="nav-links">
+    <li class="has-mega">
+      <a href="index.html#hair">Hair Treatments</a>
+      <div class="mega-menu">
+        <div class="mega-inner">
+          <div class="mega-col">
+            <div class="mega-col-title">💇 Hair Treatments</div>
+            <div class="mega-group">
+              <div class="mega-group-label">Hair Loss Solutions</div>
+              <a href="hair-transplant-jayanagar.html">Hair Transplant (FUE/FUT)</a>
+              <a href="prp-gfc-hair-loss-jayanagar.html">PRP (Platelet-Rich Plasma)</a>
+              <a href="prp-gfc-hair-loss-jayanagar.html">GFC (Growth Factor Concentrate)</a>
+            </div>
+            <div class="mega-group">
+              <div class="mega-group-label">Hair Removal</div>
+              <a href="laser-hair-removal-jayanagar.html">Laser Hair Reduction</a>
+            </div>
+          </div>
+          <div class="mega-branding">
+            <h4>Best Hair Clinic<br>in Bangalore</h4>
+            <p>You're making the right choice</p>
+          </div>
+        </div>
+      </div>
+    </li>
+    <li class="has-mega">
+      <a href="index.html#skin">Skin Texture & Acne</a>
+      <div class="mega-menu">
+        <div class="mega-inner">
+          <div class="mega-col">
+            <div class="mega-col-title">🧴 Skin Texture & Acne</div>
+            <div class="mega-group">
+              <div class="mega-group-label">Active Concerns</div>
+              <a href="pimples-acne-treatment-jayanagar.html">Pimples and Acne</a>
+            </div>
+            <div class="mega-group">
+              <div class="mega-group-label">Scar Revision</div>
+              <a href="scars-treatment-jayanagar.html">Pimple Scars</a>
+              <a href="scars-treatment-jayanagar.html">Accident & Surgical Scars</a>
+            </div>
+            <div class="mega-group">
+              <div class="mega-group-label">Growth Removal</div>
+              <a href="laser-mole-removal-jayanagar.html">Laser Mole Removal</a>
+              <a href="wart-removal-jayanagar.html">Wart Removal</a>
+            </div>
+          </div>
+          <div class="mega-branding">
+            <h4>Best Skin Clinic<br>in Bangalore</h4>
+            <p>You're making the right choice</p>
+          </div>
+        </div>
+      </div>
+    </li>
+    <li class="has-mega">
+      <a href="index.html#pigmentation">Pigmentation & Brightening</a>
+      <div class="mega-menu">
+        <div class="mega-inner">
+          <div class="mega-col">
+            <div class="mega-col-title">✨ Pigmentation & Brightening</div>
+            <div class="mega-group">
+              <div class="mega-group-label">Complexion</div>
+              <a href="skin-lightening-jayanagar.html">Skin Lightening</a>
+              <a href="pigmentation-treatment-jayanagar.html">Laser Toning</a>
+            </div>
+            <div class="mega-group">
+              <div class="mega-group-label">Chemical Peels</div>
+              <a href="pigmentation-treatment-jayanagar.html">AHA Peels</a>
+              <a href="pigmentation-treatment-jayanagar.html">Yellow Peels</a>
+              <a href="pigmentation-treatment-jayanagar.html">Carbon Peel</a>
+            </div>
+            <div class="mega-group">
+              <div class="mega-group-label">Ink Removal</div>
+              <a href="laser-tattoo-removal-jayanagar.html">Laser Tattoo Removal</a>
+            </div>
+          </div>
+          <div class="mega-branding">
+            <h4>Best Brightening Clinic<br>in Bangalore</h4>
+            <p>You're making the right choice</p>
+          </div>
+        </div>
+      </div>
+    </li>
+    <li class="has-mega">
+      <a href="index.html#anti-aging">Anti-Ageing & Aesthetics</a>
+      <div class="mega-menu">
+        <div class="mega-inner">
+          <div class="mega-col">
+            <div class="mega-col-title">💉 Anti-Ageing & Aesthetics</div>
+            <div class="mega-group">
+              <div class="mega-group-label">Injectables</div>
+              <a href="botox-dermal-fillers-jayanagar.html">Botox</a>
+              <a href="botox-dermal-fillers-jayanagar.html">Dermal Fillers</a>
+            </div>
+            <div class="mega-group">
+              <div class="mega-group-label">Skin Tightening</div>
+              <a href="index.html#morpheus">Morpheus (Microneedling RF)</a>
+            </div>
+          </div>
+          <div class="mega-branding">
+            <h4>Best Aesthetics Clinic<br>in Bangalore</h4>
+            <p>You're making the right choice</p>
+          </div>
+        </div>
+      </div>
+    </li>
+
+  </ul>
+  <div class="nav-right" style="display:flex;align-items:center">
+    <button class="btn-nav btn-book" onclick="window.open('https://link.dermasculptclinic.in/widget/booking/lrZCmPiflNmoq0yuPjp9', 'bookingPopup', 'width=600,height=800,left='+(screen.width/2-300)+',top='+(screen.height/2-400))">Book Now</button>
+    <a href="tel:+919916906661" class="btn-nav btn-call">Call Clinic Now</a>
+    <div class="menu-toggle" onclick="document.querySelector('.nav-links').classList.toggle('active')">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
 </nav>
 
 <header class="page-header">
