@@ -242,6 +242,8 @@ nav{
   font-size:0.75rem;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;cursor:pointer;
 }
 
+.mobile-nav { display: none; }
+
 /* MEGA MENU */
 .has-mega{cursor:pointer}
 .has-mega > a::after{
@@ -475,7 +477,9 @@ footer{
     <div class="nav-logo-mark"><img src="https://assets.cdn.filesafe.space/pdoJMu1QFXjGcesXGXoj/media/69eb4b63a48992f68928da0b.png" alt="Dermasculpt Logo" style="height:35px; width:auto;"></div>
     <div class="nav-name" style="font-size:1.6rem;">Dermasculpt <span>Hair &amp; Skin Clinic</span></div>
   </div>
-  <ul class="nav-links">
+  
+  <!-- DESKTOP NAV WITH MEGA MENU -->
+  <ul class="nav-links desktop-nav">
     <li class="has-mega">
       <a href="index.html#hair">Hair Treatments</a>
       <div class="mega-menu">
@@ -580,12 +584,27 @@ footer{
         </div>
       </div>
     </li>
-
+    <li>
+      <a href="pricing.html">Price List</a>
+    </li>
   </ul>
+
+  <!-- MOBILE NAV (NORMAL FLAT MENU) -->
+  <ul class="mobile-nav">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="hair-transplant-jayanagar.html">Hair Transplant</a></li>
+    <li><a href="prp-gfc-hair-loss-jayanagar.html">PRP &amp; GFC Hair Loss</a></li>
+    <li><a href="laser-hair-removal-jayanagar.html">Laser Hair Reduction</a></li>
+    <li><a href="pimples-acne-treatment-jayanagar.html">Pimples &amp; Acne</a></li>
+    <li><a href="scars-treatment-jayanagar.html">Scar Treatment</a></li>
+    <li><a href="skin-lightening-jayanagar.html">Skin Lightening</a></li>
+    <li><a href="botox-dermal-fillers-jayanagar.html">Botox &amp; Fillers</a></li>
+    <li><a href="pricing.html" style="color:var(--mint); font-weight:700;">💰 Price List</a></li>
+  </ul>
+
   <div class="nav-right" style="display:flex;align-items:center">
     <button class="btn-nav btn-book" onclick="window.open('https://link.dermasculptclinic.in/widget/booking/lrZCmPiflNmoq0yuPjp9', 'bookingPopup', 'width=600,height=800,left='+(screen.width/2-300)+',top='+(screen.height/2-400))">Book Now</button>
-    
-    <div class="menu-toggle" onclick="document.querySelector('.nav-links').classList.toggle('active')">
+    <div class="menu-toggle" onclick="document.querySelector('.mobile-nav').classList.toggle('active')">
       <span></span><span></span><span></span>
     </div>
   </div>

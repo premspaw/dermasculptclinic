@@ -180,6 +180,8 @@ nav{
 .nav-links a:hover{color:var(--mint)}
 .btn-nav{background:var(--mint);border:none;color:var(--navy);padding:0.5rem 1.3rem;border-radius:4px;font-size:0.75rem;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;cursor:pointer}
 
+.mobile-nav { display: none; }
+
 /* MEGA MENU */
 .has-mega{cursor:pointer}
 .has-mega > a::after{
@@ -413,28 +415,25 @@ footer{
   .nav-name{font-size:1.1rem !important;}
   .nav-name span{font-size:0.75rem !important;}
   .menu-toggle{display:flex;}
-  .nav-links{
-    display:flex !important;
-    position:fixed;top:56px;left:0;right:0;bottom:0;
-    background:var(--navy);flex-direction:column;padding:1.5rem 2rem 5rem 2rem;
-    gap:1.5rem;align-items:flex-start;transform:translateY(-150%);
-    transition:transform 0.3s ease;border-top:1px solid rgba(255,255,255,0.1);
-    z-index:98; overflow-y:auto;
+    .desktop-nav { display: none !important; }
+  .mobile-nav {
+    display: none;
+    position: fixed; top: 56px; left: 0; right: 0; bottom: 0;
+    background: var(--navy); flex-direction: column; padding: 2rem;
+    gap: 1.2rem; align-items: flex-start; transform: translateY(-150%);
+    transition: transform 0.3s ease; border-top: 1px solid rgba(255,255,255,0.1);
+    z-index: 98; overflow-y: auto;
   }
-  .nav-links.active{transform:translateY(0);}
-  .nav-links li{width:100%;}
-  .mega-menu{
-    display:block !important; position:static; box-shadow:none; 
-    padding:0.5rem 0 0 1rem; background:transparent; 
-    opacity:1; visibility:visible; pointer-events:auto; transform:none;
+  .mobile-nav.active { transform: translateY(0); display: flex !important; }
+  .mobile-nav li { width: 100%; list-style: none; }
+  .mobile-nav a {
+    display: block; width: 100%;
+    font-size: 0.95rem; font-weight: 600; text-transform: uppercase;
+    color: #fff; text-decoration: none; padding: 0.5rem 0;
+    border-bottom: 1px solid rgba(255,255,255,0.05);
+    letter-spacing: 0.05em;
   }
-  .mega-inner{grid-template-columns:1fr; padding:0; gap:1rem;}
-  .mega-branding{display:none;}
-  .mega-group{margin-bottom:0.5rem;}
-  .mega-col-title{font-size:0.85rem; margin-bottom:0.4rem; padding-bottom:0.2rem;}
-  .mega-group-label{font-size:0.65rem;}
-  .mega-group a{font-size:0.8rem; padding:0.3rem 0; color:rgba(255,255,255,0.8);}
-  .nav-tel{display:none}
+  .mobile-nav a:hover { color: var(--mint); }
   .service-main{padding:100px 1.5rem 3rem}
   .intro-grid{grid-template-columns:1fr}
   .service-img-container{height:auto} .service-img{height:auto; max-height:500px; object-fit:cover; object-position:center top;}
@@ -459,7 +458,9 @@ footer{
     <div class="nav-logo-mark"><img src="https://assets.cdn.filesafe.space/pdoJMu1QFXjGcesXGXoj/media/69eb4b63a48992f68928da0b.png" alt="Dermasculpt Logo" style="height:35px; width:auto;"></div>
     <div class="nav-name" style="font-size:1.6rem;">Dermasculpt <span>Hair &amp; Skin Clinic</span></div>
   </div>
-  <ul class="nav-links">
+  
+  <!-- DESKTOP NAV WITH MEGA MENU -->
+  <ul class="nav-links desktop-nav">
     <li class="has-mega">
       <a href="index.html#hair">Hair Treatments</a>
       <div class="mega-menu">
@@ -564,12 +565,27 @@ footer{
         </div>
       </div>
     </li>
-
+    <li>
+      <a href="pricing.html">Price List</a>
+    </li>
   </ul>
+
+  <!-- MOBILE NAV (NORMAL FLAT MENU) -->
+  <ul class="mobile-nav">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="hair-transplant-jayanagar.html">Hair Transplant</a></li>
+    <li><a href="prp-gfc-hair-loss-jayanagar.html">PRP &amp; GFC Hair Loss</a></li>
+    <li><a href="laser-hair-removal-jayanagar.html">Laser Hair Reduction</a></li>
+    <li><a href="pimples-acne-treatment-jayanagar.html">Pimples &amp; Acne</a></li>
+    <li><a href="scars-treatment-jayanagar.html">Scar Treatment</a></li>
+    <li><a href="skin-lightening-jayanagar.html">Skin Lightening</a></li>
+    <li><a href="botox-dermal-fillers-jayanagar.html">Botox &amp; Fillers</a></li>
+    <li><a href="pricing.html" style="color:var(--mint); font-weight:700;">💰 Price List</a></li>
+  </ul>
+
   <div class="nav-right" style="display:flex;align-items:center">
     <button class="btn-nav btn-book" onclick="window.open('https://link.dermasculptclinic.in/widget/booking/lrZCmPiflNmoq0yuPjp9', 'bookingPopup', 'width=600,height=800,left='+(screen.width/2-300)+',top='+(screen.height/2-400))">Book Now</button>
-    
-    <div class="menu-toggle" onclick="document.querySelector('.nav-links').classList.toggle('active')">
+    <div class="menu-toggle" onclick="document.querySelector('.mobile-nav').classList.toggle('active')">
       <span></span><span></span><span></span>
     </div>
   </div>
