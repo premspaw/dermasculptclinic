@@ -1148,10 +1148,11 @@ footer{
   .h-badge-icon{font-size: 0.85rem;}
   .h-badge-text{font-size: 0.48rem; line-height: 1.1;}
   .h-badge-text strong{font-size: 0.55rem; line-height: 1.1;}
-  .stats-bar{grid-template-columns:repeat(4,1fr); padding: 0.5rem 0;}
-  .stat-cell{padding:1rem 0.2rem; border-right:1px solid rgba(255,255,255,0.08);}
-  .stat-num{font-size:1.2rem;}
-  .stat-label{font-size:0.48rem; letter-spacing:0.02em; line-height:1.2;}
+  .stats-bar{grid-template-columns:repeat(2,1fr); padding: 1rem 0; gap: 1rem 0;}
+  .stat-cell{padding:1rem 0.5rem; border-right:1px solid rgba(255,255,255,0.08);}
+  .stat-cell:nth-child(2n){border-right:none;}
+  .stat-num{font-size:1.6rem;}
+  .stat-label{font-size:0.6rem; letter-spacing:0.04em; line-height:1.2;}
   .cards-grid{grid-template-columns:1fr; gap:1.5rem;}
   .tcard.featured{min-height: 340px; aspect-ratio: 4/3.2; height: auto;}
   .tcard-banner img{object-fit: cover; object-position: center;}
@@ -1188,6 +1189,10 @@ footer{
     font-weight:700;text-decoration:none;text-transform:uppercase;
     letter-spacing:0.05em;font-size:0.85rem;box-shadow:0 4px 15px rgba(61,191,160,0.3);
   }
+  .video-proof-sec{padding:3rem 1.5rem !important;}
+  .video-grid{gap:1.5rem !important;}
+  .video-item{width:100% !important; max-width:315px !important; height:auto !important; aspect-ratio:9/16 !important;}
+  .video-item iframe{width:100% !important; height:100% !important;}
 }
 </style>
 <script type="application/ld+json">
