@@ -9,7 +9,7 @@
 ### Cluster 1: Hair Restoration
 - **Pillar Link**: [PRP & GFC Hair Loss](https://www.dermasculptclinic.com/prp-gfc-hair-loss-jayanagar.html)
 - **Supporting Links**: [Specialist Hair Restoration Section](https://www.dermasculptclinic.com/#hair-restoration)
-- **Keywords**: FUE, DHI, GFC, Hair Transplant Bangalore.
+- **Keywords**: FUE, DHT, GFC, Hair Transplant Bangalore.
 
 ### Cluster 2: Laser Treatments
 - **Pillar Link**: [Laser Hair Removal](https://www.dermasculptclinic.com/laser-hair-removal-jayanagar.html)

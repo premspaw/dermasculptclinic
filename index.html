@@ -2,11 +2,20 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
+<!-- Performance: preconnect to external origins -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://assets.cdn.filesafe.space" crossorigin>
+<link rel="dns-prefetch" href="https://widgets.leadconnectorhq.com">
+<!-- LCP Preload: first carousel hero image -->
+<link rel="preload" as="image" fetchpriority="high"
+  href="https://assets.cdn.filesafe.space/pdoJMu1QFXjGcesXGXoj/media/69ea7c910d66f2a665a4d608.png">
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Dermasculpt Clinic Jayanagar | Best Dermatologist & Skin Clinic in Bangalore</title>
 <link rel="canonical" href="https://www.dermasculptclinic.com/">
-<meta name="description" content="Best Skin & Laser Clinic in Jayanagar, Bangalore. Led by Dr. Deepak Devkar (18+ yrs experience). Advanced Laser Hair Removal, Acne, Pigmentation & Hair Transplant. Book a consult!">
-<meta name="keywords" content="Dermatologist Jayanagar, Skin Clinic Bangalore, Laser Hair Removal Jayanagar, Hair Transplant Bangalore, Dr. Deepak Devkar, Acne Treatment Bangalore">
+<meta name="description" content="Best Skin & Laser Clinic in Jayanagar, Bangalore. Led by Dr. Deepak Devakar (18+ yrs experience). Advanced Laser Hair Removal, Acne, Pigmentation & Hair Transplant. Book a consult!">
+<meta name="keywords" content="Dermatologist Jayanagar, Skin Clinic Bangalore, Laser Hair Removal Jayanagar, Hair Transplant Bangalore, Dr. Deepak Devakar, Acne Treatment Bangalore">
 
 <!-- Open Graph / Social Proof -->
 <meta property="og:title" content="Dermasculpt Clinic Jayanagar | Best Dermatologist & Skin Clinic">
@@ -21,7 +30,13 @@
 <meta name="geo.position" content="12.9254;77.5830">
 <meta name="ICBM" content="12.9254, 77.5830">
 
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500&family=Manrope:wght@300;400;500;600&display=swap" rel="stylesheet">
+<!-- Non-blocking font load -->
+<link rel="preload" as="style" onload="this.rel='stylesheet'"
+  href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500&family=Manrope:wght@300;400;500;600&display=swap">
+<noscript>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500&family=Manrope:wght@300;400;500;600&display=swap">
+</noscript>
 
 <script type="application/ld+json">
 {
@@ -110,17 +125,17 @@
   "employee": [
     {
       "@type": "Physician",
-      "name": "Dr. Deepak Devkar",
+      "name": "Dr. Deepak Devakar",
       "jobTitle": "Lead Dermatologist",
       "medicalSpecialty": ["Dermatology", "CosmeticDermatology", "LaserMedicine"],
-      "description": "Dr. Deepak Devkar is a highly experienced Dermatologist in Bangalore with over 18 years of clinical expertise in advanced skin and laser treatments.",
+      "description": "Dr. Deepak Devakar is a highly experienced Dermatologist in Bangalore with over 18 years of clinical expertise in advanced skin and laser treatments.",
       "knowsAbout": ["Laser Hair Reduction", "PRP Hair Therapy", "Anti-Aging Treatments", "Acne Protocols", "Pigmentation Correction"],
       "worksFor": {
         "@id": "https://www.dermasculptclinic.com/#clinic"
       },
       "sameAs": [
-        "https://www.practo.com/bangalore/doctor/dr-deepak-devkar-dermatologist",
-        "https://www.linkedin.com/in/dr-deepak-devkar"
+        "https://www.practo.com/bangalore/doctor/dr-deepak-devakar-dermatologist",
+        "https://www.linkedin.com/in/dr-deepak-devakar"
       ]
     }
   ]
@@ -1117,6 +1132,7 @@ footer{
   .mobile-nav a:hover { color: var(--mint); }
   .hero{display:flex !important; flex-direction:column; height:auto !important; min-height:auto !important; padding-top:56px; background:var(--navy);}
   .hero-left, .hero-right{display:contents !important;}
+  .hero-left::before, .hero-left::after{display:none !important;}
   .hero-left h1{order:1; display:block; padding:1.5rem 1.5rem 0.5rem; font-size:clamp(2rem,8vw,2.8rem); margin:0;}
   .hero-sub{order:2; display:block; padding:0 1.5rem 1rem; font-size:0.95rem; color:rgba(255,255,255,0.6); margin:0;}
   .hero-right > * {order:3;} /* Carousel and Case info */
@@ -1192,7 +1208,7 @@ footer{
       "name": "Who is the best dermatologist for hair transplant in Bangalore?",
       "acceptedAnswer": {
         "@type": "AcceptedAnswer",
-        "text": "Dr. Deepak Devkar at Dermasculpt Clinic is a leading hair transplant specialist in Bangalore with over 18 years of experience in DHT and FUE techniques."
+        "text": "Dr. Deepak Devakar at Dermasculpt Clinic is a leading hair transplant specialist in Bangalore with over 18 years of experience in DHT and FUE techniques."
       }
     },
     {
@@ -1390,7 +1406,7 @@ footer{
     <div class="hero-badges">
       <div class="h-badge">
         <span class="h-badge-icon">🏥</span>
-        <div class="h-badge-text"><strong>Dr. Deepak Devkar</strong>MBBS, DVD · Specialist</div>
+        <div class="h-badge-text"><strong>Dr. Deepak Devakar</strong>MBBS, DVD · Specialist</div>
       </div>
       <div class="h-badge">
         <span class="h-badge-icon">⭐</span>
@@ -1404,12 +1420,12 @@ footer{
   </div>
     <div class="hero-right">
       <div class="hero-carousel" id="heroCarousel">
-        <img src="https://assets.cdn.filesafe.space/pdoJMu1QFXjGcesXGXoj/media/69ea7c910d66f2a665a4d608.png" alt="Clinical Result 1" class="carousel-img active" data-treatment="Pigmentation Correction" data-client="Client Case #842" data-desc="Complete clearing of deep pigmentation. Treated and cured within 12 months of clinical protocol.">
-        <img src="https://assets.cdn.filesafe.space/pdoJMu1QFXjGcesXGXoj/media/69eb3dab717d5dd4e195c6ee.jpeg" alt="Clinical Result 4" class="carousel-img" data-treatment="Hair Transplant Result" data-client="Client Case #644" data-desc="Full natural density restored 1 year after hair transplant.">
-        <img src="https://assets.cdn.filesafe.space/pdoJMu1QFXjGcesXGXoj/media/69eb3e419fe87a999497ea84.jpeg" alt="Clinical Result 5" class="carousel-img" data-treatment="Pigmentation Case Study" data-client="Client Case #512" data-desc="Melasma correction. Complete clearing of melasma and uneven patches in 1 year.">
-        <img src="https://assets.cdn.filesafe.space/pdoJMu1QFXjGcesXGXoj/media/69eb41c5a48992f689267b44.jpeg" alt="Clinical Result 6" class="carousel-img" data-treatment="Facial Scar Revision" data-client="Client Case #408" data-desc="Advanced scar remodeling. Dramatic reduction in deep facial scarring.">
-        <img src="https://assets.cdn.filesafe.space/pdoJMu1QFXjGcesXGXoj/media/69eb403d9fe87a9994986782.jpeg" alt="Clinical Result 7" class="carousel-img" data-treatment="Open Pores Treatment" data-client="Client Case #318" data-desc="Open pores cleared. Smooth, refined skin texture achieved in 8 months.">
-        <img src="https://assets.cdn.filesafe.space/pdoJMu1QFXjGcesXGXoj/media/69eb45260d66f2a665cd5cf8.jpeg" alt="Clinical Result 8" class="carousel-img" data-treatment="Active Acne & Pimples" data-client="Client Case #294" data-desc="Complete clearing of active acne. Healthy, blemish-free skin restored.">
+        <img src="https://assets.cdn.filesafe.space/pdoJMu1QFXjGcesXGXoj/media/69ea7c910d66f2a665a4d608.png" alt="Clinical Result 1" class="carousel-img active" fetchpriority="high" loading="eager" decoding="async" data-treatment="Pigmentation Correction" data-client="Client Case #842" data-desc="Complete clearing of deep pigmentation. Treated and cured within 12 months of clinical protocol.">
+        <img src="https://assets.cdn.filesafe.space/pdoJMu1QFXjGcesXGXoj/media/69eb3dab717d5dd4e195c6ee.jpeg" loading="lazy" decoding="async" alt="Clinical Result 4" class="carousel-img" data-treatment="Hair Transplant Result" data-client="Client Case #644" data-desc="Full natural density restored 1 year after hair transplant.">
+        <img src="https://assets.cdn.filesafe.space/pdoJMu1QFXjGcesXGXoj/media/69eb3e419fe87a999497ea84.jpeg" loading="lazy" decoding="async" alt="Clinical Result 5" class="carousel-img" data-treatment="Pigmentation Case Study" data-client="Client Case #512" data-desc="Melasma correction. Complete clearing of melasma and uneven patches in 1 year.">
+        <img src="https://assets.cdn.filesafe.space/pdoJMu1QFXjGcesXGXoj/media/69eb41c5a48992f689267b44.jpeg" loading="lazy" decoding="async" alt="Clinical Result 6" class="carousel-img" data-treatment="Facial Scar Revision" data-client="Client Case #408" data-desc="Advanced scar remodeling. Dramatic reduction in deep facial scarring.">
+        <img src="https://assets.cdn.filesafe.space/pdoJMu1QFXjGcesXGXoj/media/69eb403d9fe87a9994986782.jpeg" loading="lazy" decoding="async" alt="Clinical Result 7" class="carousel-img" data-treatment="Open Pores Treatment" data-client="Client Case #318" data-desc="Open pores cleared. Smooth, refined skin texture achieved in 8 months.">
+        <img src="https://assets.cdn.filesafe.space/pdoJMu1QFXjGcesXGXoj/media/69eb45260d66f2a665cd5cf8.jpeg" loading="lazy" decoding="async" alt="Clinical Result 8" class="carousel-img" data-treatment="Active Acne & Pimples" data-client="Client Case #294" data-desc="Complete clearing of active acne. Healthy, blemish-free skin restored.">
       </div>
       
       <!-- New Dedicated Info Area (Fills the previous white gap) -->
@@ -1440,7 +1456,7 @@ footer{
   <div class="geo-grid">
     <div class="geo-item">
       <h4><span style="font-size:1.2rem">🏥</span> Clinic Summary</h4>
-      <p><strong>Dermasculpt Clinic</strong> is a top-rated dermatology center in <strong>Jayanagar, Bangalore</strong>. Led by <strong>Dr. Deepak Devkar</strong> (MBBS, DVD) with 18+ years of expertise. Specializing in US-FDA approved laser treatments and DHT hair transplants.</p>
+      <p><strong>Dermasculpt Clinic</strong> is a top-rated dermatology center in <strong>Jayanagar, Bangalore</strong>. Led by <strong>Dr. Deepak Devakar</strong> (MBBS, DVD) with 18+ years of expertise. Specializing in US-FDA approved laser treatments and DHT hair transplants.</p>
     </div>
     <div class="geo-item">
       <h4><span style="font-size:1.2rem">✅</span> Clinical Highlights</h4>
@@ -1480,11 +1496,11 @@ footer{
     <div class="tcard featured" data-cat="hairtransplant" onclick="location.href='https://dermasculptclinic.in/'">
       <div class="tcard-badge-top">Specialist Center</div>
       <div class="tcard-banner">
-        <img src="https://assets.cdn.filesafe.space/pdoJMu1QFXjGcesXGXoj/media/69eb3dab717d5dd4e195c6ee.jpeg" alt="Best Hair Transplant Bangalore">
+        <img src="https://assets.cdn.filesafe.space/pdoJMu1QFXjGcesXGXoj/media/69eb3dab717d5dd4e195c6ee.jpeg" loading="lazy" decoding="async" alt="Best Hair Transplant Bangalore">
       </div>
       <div class="tcard-body">
         <h3 style="color:#fff; font-family:'Playfair Display', serif; font-size:1.15rem; font-weight:700; margin-bottom:0.4rem; letter-spacing:0.02em;">Hair Transplant</h3>
-        <div class="tcard-desc"><span style="color:var(--mint);font-weight:700">Hair Specialist</span> · World's most Advanced DHT Technique restoration for natural, permanent density. Led by Dr. Deepak Devkar.</div>
+        <div class="tcard-desc"><span style="color:var(--mint);font-weight:700">Hair Specialist</span> · World's most Advanced DHT Technique restoration for natural, permanent density. Led by Dr. Deepak Devakar.</div>
         <div class="click-more">Click for more Details →</div>
       </div>
       <div class="tcard-arrow" style="opacity:1;background:var(--mint);color:var(--navy);bottom:1.5rem;right:1rem;width:30px;height:30px">→</div>
@@ -1608,7 +1624,7 @@ footer{
   <div style="max-width: 1000px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 4rem; align-items: center;">
     <div class="doc-image reveal" style="flex: 1; min-width: 300px; position: relative;">
       <div style="width: 100%; aspect-ratio: 4/5; background: var(--navy); border-radius: 12px; overflow: hidden; position: relative;">
-        <img src="dr_deepak.png" alt="Dr. Deepak Devkar - Head Dermatologist" style="width: 100%; height: 100%; object-fit: cover; object-position: center top;">
+        <img src="dr_deepak.png" alt="Dr. Deepak Devakar - Head Dermatologist" style="width: 100%; height: 100%; object-fit: cover; object-position: center top;">
       </div>
       <div style="position: absolute; bottom: -20px; right: -20px; background: var(--mint); color: var(--navy); padding: 1.5rem; border-radius: 12px; font-weight: 700; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
         <div style="font-size: 2rem; margin-bottom: 0.2rem;">18+</div>
@@ -1617,13 +1633,13 @@ footer{
     </div>
     <div class="doc-content reveal" style="flex: 1.5; min-width: 300px;">
       <div class="sec-label" style="color: var(--mint);">Meet Your Expert</div>
-      <h2 class="sec-title" style="margin-bottom: 1.5rem; color: var(--navy);">Dr. Deepak <em>Devkar</em></h2>
+      <h2 class="sec-title" style="margin-bottom: 1.5rem; color: var(--navy);">Dr. Deepak <em>Devakar</em></h2>
       <div style="font-weight: 700; color: var(--cobalt); margin-bottom: 1.5rem; font-size: 1.1rem;">MBBS, DVD (Dermatology, Venereology & Leprosy)</div>
       <p style="color: var(--body); line-height: 1.8; margin-bottom: 1.5rem;">
-        Dr. Deepak Devkar is a highly respected and board-certified Dermatologist and Hair Transplant Surgeon based in Jayanagar, Bangalore. With over 18 years of clinical experience, he has successfully treated over 5,800 patients, earning a flawless 5-star reputation.
+        Dr. Deepak Devakar is a highly respected and board-certified Dermatologist and Hair Transplant Surgeon based in Jayanagar, Bangalore. With over 18 years of clinical experience, he has successfully treated over 5,800 patients, earning a flawless 5-star reputation.
       </p>
       <p style="color: var(--body); line-height: 1.8; margin-bottom: 2rem;">
-        As the founder and medical director of Dermasculpt Clinic, Dr. Devkar specializes in advanced US-FDA approved laser treatments, DHI & FUE hair transplants, and comprehensive anti-ageing aesthetics. His philosophy is rooted in providing honest, ethical, and evidence-based medical treatments rather than pushing unnecessary commercial procedures.
+        As the founder and medical director of Dermasculpt Clinic, Dr. Devakar specializes in advanced US-FDA approved laser treatments, DHT (Direct Hair Transplant) & FUE hair transplants, and comprehensive anti-ageing aesthetics. His philosophy is rooted in providing honest, ethical, and evidence-based medical treatments rather than pushing unnecessary commercial procedures.
       </p>
       <ul style="list-style: none; margin-bottom: 2.5rem; display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
         <li style="display: flex; align-items: center; gap: 0.5rem; color: var(--text);"><div style="color: var(--mint); font-weight: 700;">✓</div> Medical Dermatology</li>
@@ -1631,7 +1647,7 @@ footer{
         <li style="display: flex; align-items: center; gap: 0.5rem; color: var(--text);"><div style="color: var(--mint); font-weight: 700;">✓</div> Advanced Lasers</li>
         <li style="display: flex; align-items: center; gap: 0.5rem; color: var(--text);"><div style="color: var(--mint); font-weight: 700;">✓</div> Anti-Ageing Aesthetics</li>
       </ul>
-      <button class="btn-primary" onclick="window.open('https://link.dermasculptclinic.in/widget/booking/lrZCmPiflNmoq0yuPjp9', 'bookingPopup', 'width=600,height=800,left='+(screen.width/2-300)+',top='+(screen.height/2-400))">Consult Dr. Devkar</button>
+      <button class="btn-primary" onclick="window.open('https://link.dermasculptclinic.in/widget/booking/lrZCmPiflNmoq0yuPjp9', 'bookingPopup', 'width=600,height=800,left='+(screen.width/2-300)+',top='+(screen.height/2-400))">Consult Dr. Devakar</button>
     </div>
   </div>
 </section>
@@ -1647,7 +1663,7 @@ footer{
     <div class="laser-content reveal">
       <div class="sec-label">Featured Service</div>
       <h2 class="sec-title">Expert Hair <em>Restoration</em> & Transplants</h2>
-      <p class="spot-body">Achieve natural, dense hair growth with our specialist transplant and restoration protocols in Jayanagar. We specialize in FUE, DHI, and advanced GFC therapies to treat hair loss at its root.</p>
+      <p class="spot-body">Achieve natural, dense hair growth with our specialist transplant and restoration protocols in Jayanagar. We specialize in FUE, DHT (Direct Hair Transplant), and advanced GFC therapies to treat hair loss at its root.</p>
       
       <div class="laser-benefits">
         <div class="benefit-item"><div class="benefit-icon">⚡</div><div class="benefit-text">Permanent Reduction</div></div>
@@ -1754,10 +1770,10 @@ footer{
     
     <div class="video-grid reveal" style="display: flex; gap: 3rem; justify-content: center; flex-wrap: wrap;">
       <div class="video-item" style="border-radius: 16px; overflow: hidden; box-shadow: 0 16px 40px rgba(0,0,0,0.1);">
-        <iframe width="315" height="560" src="https://www.youtube.com/embed/m3-wGV7ehyg" title="Skin Problem Solution" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <iframe width="315" height="560" src="https://www.youtube.com/embed/m3-wGV7ehyg" title="Skin Problem Solution" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe>
       </div>
       <div class="video-item" style="border-radius: 16px; overflow: hidden; box-shadow: 0 16px 40px rgba(0,0,0,0.1);">
-        <iframe width="315" height="560" src="https://www.youtube.com/embed/COV739xsHEk" title="Hair Results" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <iframe width="315" height="560" src="https://www.youtube.com/embed/COV739xsHEk" title="Hair Results" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe>
       </div>
     </div>
   </div>
@@ -1896,7 +1912,7 @@ footer{
       </div>
 
       <div class="faq-item">
-        <h3 style="font-size:1.2rem; color:#fff; margin-bottom:0.8rem;">How can I book an appointment with Dr. Deepak Devkar?</h3>
+        <h3 style="font-size:1.2rem; color:#fff; margin-bottom:0.8rem;">How can I book an appointment with Dr. Deepak Devakar?</h3>
         <p style="color:rgba(255,255,255,0.7); line-height:1.6;">You can book an appointment directly through our <strong>online booking portal</strong> or by calling us at <strong>+91 99169 06661</strong>. We offer both in-clinic consultations and follow-up care.</p>
       </div>
     </div>
@@ -1906,8 +1922,8 @@ footer{
 <!-- CTA -->
 <section class="cta" id="contact">
   <div class="sec-label" style="display:block;margin-bottom:0.7rem">Visit Us</div>
-  <h2 class="sec-title reveal">Meet Dr. Deepak Devkar:<br>Expert <em>Dermatologist</em> in Bangalore</h2>
-  <p class="cta-desc reveal">With 18+ years of clinical excellence, Dr. Deepak Devkar leads our Jayanagar clinic, providing world-class skin and hair care to thousands of patients across Bangalore.</p>
+  <h2 class="sec-title reveal">Meet Dr. Deepak Devakar:<br>Expert <em>Dermatologist</em> in Bangalore</h2>
+  <p class="cta-desc reveal">With 18+ years of clinical excellence, Dr. Deepak Devakar leads our Jayanagar clinic, providing world-class skin and hair care to thousands of patients across Bangalore.</p>
   <div class="cta-btns reveal">
     <button class="btn-primary" onclick="window.open('https://link.dermasculptclinic.in/widget/booking/lrZCmPiflNmoq0yuPjp9', 'bookingPopup', 'width=600,height=800,left='+(screen.width/2-300)+',top='+(screen.height/2-400))">Book an Appointment</button>
     <button class="btn-cta-outline">WhatsApp Us</button>
@@ -1930,7 +1946,7 @@ footer{
   <div class="footer-grid">
     <div class="footer-brand">
       <h3>Derma<span>sculpt</span></h3>
-      <p>Premium Skin & Laser Clinic in Jayanagar, Bangalore. Led by Dr. Deepak Devkar, we combine 18+ years of expertise with world-class technology.</p>
+      <p>Premium Skin & Laser Clinic in Jayanagar, Bangalore. Led by Dr. Deepak Devakar, we combine 18+ years of expertise with world-class technology.</p>
       <div class="footer-socials">
         <a href="https://www.instagram.com/" target="_blank" class="social-icon" aria-label="Instagram">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
@@ -2063,7 +2079,7 @@ if(slides.length > 0) {
 // SMART HEADER
 let lastScroll = 0;
 const nav = document.querySelector('nav');
-window.addEventListener('scroll', () => {
+window.addEventListener('scroll', function onScroll() {
   const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
   const navLinks = document.querySelector('.nav-links');
   const isMenuOpen = navLinks && navLinks.classList.contains('active');
@@ -2083,7 +2099,7 @@ window.addEventListener('scroll', () => {
   }
   
   lastScroll = currentScroll;
-});
+}, { passive: true });
 
 // ROLLING NUMBERS ANIMATION
 const stats = document.querySelectorAll('.stat-num');
@@ -2125,6 +2141,6 @@ stats.forEach(stat => statObserver.observe(stat));
 <div class="sticky-cta">
   <a href="tel:+919916906661" class="btn-sticky">Call Clinic Now</a>
 </div>
-<script src="https://widgets.leadconnectorhq.com/loader.js" data-resources-url="https://widgets.leadconnectorhq.com/chat-widget/loader.js" data-widget-id="69908d356dc9bb347caf5048"></script>
+<script defer src="https://widgets.leadconnectorhq.com/loader.js" data-resources-url="https://widgets.leadconnectorhq.com/chat-widget/loader.js" data-widget-id="69908d356dc9bb347caf5048"></script>
 </body>
 </html>
