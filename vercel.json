@@ -1,4 +1,26 @@
 {
   "cleanUrls": true,
-  "trailingSlash": false
+  "trailingSlash": false,
+  "redirects": [
+    {
+      "source": "/botox-dermal-fillers-jayanagar.html",
+      "destination": "/anti-aging-jayanagar.html",
+      "permanent": true
+    },
+    {
+      "source": "/botox-dermal-fillers-jayanagar",
+      "destination": "/anti-aging-jayanagar",
+      "permanent": true
+    },
+    {
+      "source": "/facial-rejuvenation-jayanagar.html",
+      "destination": "/anti-aging-jayanagar.html",
+      "permanent": true
+    },
+    {
+      "source": "/facial-rejuvenation-jayanagar",
+      "destination": "/anti-aging-jayanagar",
+      "permanent": true
+    }
+  ]
 }

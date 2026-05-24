@@ -1,20 +1,40 @@
 User-agent: *
 Allow: /
 
-# AI Search Engines
+# AI search and answer engines
 User-agent: GPTBot
 Allow: /
 
 User-agent: ChatGPT-User
 Allow: /
 
+User-agent: OAI-SearchBot
+Allow: /
+
 User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-SearchBot
 Allow: /
 
 User-agent: PerplexityBot
 Allow: /
 
-User-agent: OAI-SearchBot
+User-agent: Perplexity-User
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Applebot
 Allow: /
 
 Sitemap: https://www.dermasculptclinic.com/sitemap.xml
+LLM-Content: https://www.dermasculptclinic.com/llms.txt
+LLM-Full-Content: https://www.dermasculptclinic.com/llms-full.txt
