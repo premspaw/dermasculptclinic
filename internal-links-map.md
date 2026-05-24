@@ -22,9 +22,9 @@
 - **Keywords**: Acne Specialist Bangalore, Melasma Treatment, Scar Revision.
 
 ### Cluster 4: Anti-Aging & Aesthetics
-- **Pillar Link**: [Botox & Dermal Fillers](https://www.dermasculptclinic.com/botox-dermal-fillers-jayanagar.html)
+- **Pillar Link**: [Facial Rejuvenation](https://www.dermasculptclinic.com/anti-aging-jayanagar.html)
 - **Supporting Links**: [Morpheus RF Section](https://www.dermasculptclinic.com/#morpheus)
-- **Keywords**: Botox Bangalore, Dermal Fillers, Skin Tightening Jayanagar.
+- **Keywords**: Facial Rejuvenation Bangalore, Facial Volume Care, Skin Tightening Jayanagar.
 
 ## Linking Rules
 1. Every supporting page must link back to its **Pillar Page** in the first 200 words.

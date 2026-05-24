@@ -100,9 +100,9 @@ nav_html = """<nav>
           <div class="mega-col">
             <div class="mega-col-title">💉 Anti-Ageing & Aesthetics</div>
             <div class="mega-group">
-              <div class="mega-group-label">Injectables</div>
-              <a href="botox-dermal-fillers-jayanagar.html">Botox</a>
-              <a href="botox-dermal-fillers-jayanagar.html">Dermal Fillers</a>
+              <div class="mega-group-label">Aesthetic Treatments</div>
+              <a href="anti-aging-jayanagar.html">Wrinkle-Smoothing Care</a>
+              <a href="anti-aging-jayanagar.html">Facial Volume Care</a>
             </div>
             <div class="mega-group">
               <div class="mega-group-label">Skin Tightening</div>
@@ -130,7 +130,7 @@ nav_html = """<nav>
     <li><a href="pimples-acne-treatment-jayanagar.html">Pimples &amp; Acne</a></li>
     <li><a href="scars-treatment-jayanagar.html">Scar Treatment</a></li>
     <li><a href="skin-lightening-jayanagar.html">Skin Lightening</a></li>
-    <li><a href="botox-dermal-fillers-jayanagar.html">Botox &amp; Fillers</a></li>
+    <li><a href="anti-aging-jayanagar.html">Facial Rejuvenation</a></li>
     <li><a href="pricing.html" style="color:var(--mint); font-weight:700;">💰 Price List</a></li>
   </ul>
 
