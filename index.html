@@ -945,13 +945,29 @@ nav.nav-hidden{
 }
 .lightbox-close:hover{background:var(--mint);color:var(--navy)}
 
-.click-more{
-  font-size:0.6rem;
-  font-weight:700;
-  text-transform:uppercase;
+.card-btn{
+  display:inline-flex;
+  align-items:center;
+  gap:0.35rem;
+  background:rgba(61,191,160,0.18);
   color:var(--mint);
-  margin-top:0.2rem;
-  letter-spacing:0.05em;
+  border:1px solid rgba(61,191,160,0.45);
+  border-radius:50px;
+  padding:0.25rem 0.75rem;
+  font-size:0.68rem;
+  font-weight:700;
+  letter-spacing:0.04em;
+  text-transform:uppercase;
+  margin-top:0.5rem;
+  width:fit-content;
+  transition:all 0.25s ease;
+}
+.tcard:hover .card-btn{
+  background:var(--mint);
+  color:var(--navy);
+  border-color:var(--mint);
+  transform:translateX(3px);
+  box-shadow:0 4px 12px rgba(61,191,160,0.35);
 }
 .tcard-badge-top{
   position:absolute;
@@ -1507,12 +1523,21 @@ footer{
   .tcard.featured .tcard-desc span{
     font-size: 0.62rem !important;
   }
-  .tcard.featured .click-more{
-    font-size: 0.58rem !important;
-    margin-top: 0.1rem !important;
-    letter-spacing: 0.02em !important;
+  .tcard.featured .card-btn{
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 0.2rem !important;
+    background: rgba(61,191,160,0.22) !important;
     color: var(--mint) !important;
+    border: 1px solid rgba(61,191,160,0.5) !important;
+    border-radius: 50px !important;
+    padding: 0.15rem 0.5rem !important;
+    font-size: 0.52rem !important;
     font-weight: 700 !important;
+    letter-spacing: 0.03em !important;
+    text-transform: uppercase !important;
+    margin-top: 0.2rem !important;
+    width: fit-content !important;
   }
   .tcard-badge-top{
     font-size: 0.48rem !important;
@@ -1753,7 +1778,7 @@ footer{
   .tcard.featured{height: 185px !important; min-height: 185px !important;}
   .tcard.featured h3{font-size: 0.76rem !important;}
   .tcard.featured .tcard-desc{font-size: 0.58rem !important;}
-  .tcard.featured .click-more{font-size: 0.52rem !important;}
+  .tcard.featured .card-btn{font-size: 0.48rem !important; padding: 0.12rem 0.45rem !important;}
 }
 
 /* ULTRA-CLEAN CLINICAL SVG ICONS */
@@ -2162,11 +2187,10 @@ footer{
         <img src="https://assets.cdn.filesafe.space/pdoJMu1QFXjGcesXGXoj/media/69eb3dab717d5dd4e195c6ee.jpeg" loading="lazy" decoding="async" alt="Advanced Hair Transplant Bangalore">
       </div>
       <div class="tcard-body">
-        <h3 style="color:#fff; font-family:'Playfair Display', serif; font-size:1.15rem; font-weight:700; margin-bottom:0.4rem; letter-spacing:0.02em;">Hair Transplant</h3>
-        <div class="tcard-desc"><span style="color:var(--mint);font-weight:700">Hair Specialist</span> · World's most Advanced DHT Technique restoration for natural, permanent density. Led by Dr. Deepak Devakar.</div>
-        <div class="click-more">Click for more Details →</div>
+        <h3 style="color:#fff; font-family:'Playfair Display', serif; font-size:1.15rem; font-weight:700; margin-bottom:0.3rem; letter-spacing:0.02em;">Hair Transplant</h3>
+        <div class="tcard-desc"><span style="color:var(--mint);font-weight:700">Hair Specialist</span> · Advanced DHT restoration for natural permanent density.</div>
+        <span class="card-btn">Explore →</span>
       </div>
-      <div class="tcard-arrow" style="opacity:1;background:var(--mint);color:var(--navy);bottom:1.5rem;right:1rem;width:30px;height:30px">→</div>
     </div>
 
     <div class="tcard featured" data-cat="laser" onclick="location.href='laser-hair-removal-jayanagar.html'">
@@ -2174,11 +2198,10 @@ footer{
         <img src="laser_hair_removal_procedure_1776943983393.png" alt="Laser Hair Reduction">
       </div>
       <div class="tcard-body">
-        <h3 style="color:#fff; font-family:'Playfair Display', serif; font-size:1.15rem; font-weight:700; margin-bottom:0.4rem; letter-spacing:0.02em;">Laser Hair Reduction</h3>
-        <div class="tcard-desc"><span style="color:var(--mint);font-weight:700">Laser Specialist</span> · Permanent hair removal using advanced laser technology.</div>
-        <div class="click-more">Click for more Details →</div>
+        <h3 style="color:#fff; font-family:'Playfair Display', serif; font-size:1.15rem; font-weight:700; margin-bottom:0.3rem; letter-spacing:0.02em;">Laser Hair Reduction</h3>
+        <div class="tcard-desc"><span style="color:var(--mint);font-weight:700">Laser Specialist</span> · US-FDA approved permanent, painless hair reduction.</div>
+        <span class="card-btn">Explore →</span>
       </div>
-      <div class="tcard-arrow" style="opacity:1;background:var(--mint);color:var(--navy);bottom:1.5rem;right:1rem;width:30px;height:30px">→</div>
     </div>
 
     <div class="tcard featured" data-cat="skin" onclick="location.href='pimples-acne-treatment-jayanagar.html'">
@@ -2186,11 +2209,10 @@ footer{
         <img src="acne_treatment_dermasculpt_1776947119874.png" alt="Pimples & Acne Treatment">
       </div>
       <div class="tcard-body">
-        <h3 style="color:#fff; font-family:'Playfair Display', serif; font-size:1.15rem; font-weight:700; margin-bottom:0.4rem; letter-spacing:0.02em;">Pimples & Acne Treatment</h3>
-        <div class="tcard-desc"><span style="color:var(--mint);font-weight:700">Skin Specialist</span> · Advanced medical-grade acne protocols & targeted light therapy.</div>
-        <div class="click-more">Click for more Details →</div>
+        <h3 style="color:#fff; font-family:'Playfair Display', serif; font-size:1.15rem; font-weight:700; margin-bottom:0.3rem; letter-spacing:0.02em;">Pimples & Acne Treatment</h3>
+        <div class="tcard-desc"><span style="color:var(--mint);font-weight:700">Skin Specialist</span> · Medical acne protocols & targeted light therapy.</div>
+        <span class="card-btn">Explore →</span>
       </div>
-      <div class="tcard-arrow" style="opacity:1;background:var(--mint);color:var(--navy);bottom:1.5rem;right:1rem;width:30px;height:30px">→</div>
     </div>
 
     <div class="tcard featured" data-cat="skin" onclick="location.href='skin-lightening-jayanagar.html'">
@@ -2198,11 +2220,10 @@ footer{
         <img src="skin_lightening_dermasculpt_1776947584921.png" alt="Skin Lightening Treatment">
       </div>
       <div class="tcard-body">
-        <h3 style="color:#fff; font-family:'Playfair Display', serif; font-size:1.15rem; font-weight:700; margin-bottom:0.4rem; letter-spacing:0.02em;">Skin Lightening Treatment</h3>
-        <div class="tcard-desc"><span style="color:var(--mint);font-weight:700">Skin Specialist</span> · Precision brightening protocols & luminous skin tone correction.</div>
-        <div class="click-more">Click for more Details →</div>
+        <h3 style="color:#fff; font-family:'Playfair Display', serif; font-size:1.15rem; font-weight:700; margin-bottom:0.3rem; letter-spacing:0.02em;">Skin Lightening Treatment</h3>
+        <div class="tcard-desc"><span style="color:var(--mint);font-weight:700">Skin Specialist</span> · Precision brightening & radiant tone correction.</div>
+        <span class="card-btn">Explore →</span>
       </div>
-      <div class="tcard-arrow" style="opacity:1;background:var(--mint);color:var(--navy);bottom:1.5rem;right:1rem;width:30px;height:30px">→</div>
     </div>
 
     <div class="tcard featured" data-cat="hair" onclick="location.href='prp-gfc-hair-loss-jayanagar.html'">
@@ -2210,11 +2231,10 @@ footer{
         <img src="https://assets.cdn.filesafe.space/pdoJMu1QFXjGcesXGXoj/media/69ea220db0e5e2bb7f1b9226.png" alt="PRP & GFC Hair Loss Treatment">
       </div>
       <div class="tcard-body">
-        <h3 style="color:#fff; font-family:'Playfair Display', serif; font-size:1.15rem; font-weight:700; margin-bottom:0.4rem; letter-spacing:0.02em;">PRP & GFC Hair Therapy</h3>
-        <div class="tcard-desc"><span style="color:var(--mint);font-weight:700">Hair Specialist</span> · Stimulate natural follicle regrowth with Platelet-Rich Plasma & GFC.</div>
-        <div class="click-more">Click for more Details →</div>
+        <h3 style="color:#fff; font-family:'Playfair Display', serif; font-size:1.15rem; font-weight:700; margin-bottom:0.3rem; letter-spacing:0.02em;">PRP & GFC Hair Therapy</h3>
+        <div class="tcard-desc"><span style="color:var(--mint);font-weight:700">Hair Specialist</span> · Natural follicle regrowth with PRP & GFC therapy.</div>
+        <span class="card-btn">Explore →</span>
       </div>
-      <div class="tcard-arrow" style="opacity:1;background:var(--mint);color:var(--navy);bottom:1.5rem;right:1rem;width:30px;height:30px">→</div>
     </div>
 
     <div class="tcard featured" data-cat="laser" onclick="location.href='laser-mole-removal-jayanagar.html'">
@@ -2222,25 +2242,21 @@ footer{
         <img src="https://assets.cdn.filesafe.space/pdoJMu1QFXjGcesXGXoj/media/69ea26a1e256649836475bca.png" alt="Laser Mole Removal Treatment">
       </div>
       <div class="tcard-body">
-        <h3 style="color:#fff; font-family:'Playfair Display', serif; font-size:1.15rem; font-weight:700; margin-bottom:0.4rem; letter-spacing:0.02em;">Laser Mole Removal</h3>
-        <div class="tcard-desc"><span style="color:var(--mint);font-weight:700">Laser Specialist</span> · Precise CO₂ laser ablation for scar-free removal of moles & skin growths.</div>
-        <div class="click-more">Click for more Details →</div>
+        <h3 style="color:#fff; font-family:'Playfair Display', serif; font-size:1.15rem; font-weight:700; margin-bottom:0.3rem; letter-spacing:0.02em;">Laser Mole Removal</h3>
+        <div class="tcard-desc"><span style="color:var(--mint);font-weight:700">Laser Specialist</span> · Precise CO₂ laser ablation for scar-free removal.</div>
+        <span class="card-btn">Explore →</span>
       </div>
-      <div class="tcard-arrow" style="opacity:1;background:var(--mint);color:var(--navy);bottom:1.5rem;right:1rem;width:30px;height:30px">→</div>
     </div>
-
-
 
     <div class="tcard featured" data-cat="skin" onclick="location.href='scars-treatment-jayanagar.html'">
       <div class="tcard-banner">
         <img src="scars-treatment-hero.png" alt="Scars Treatment">
       </div>
       <div class="tcard-body">
-        <h3 style="color:#fff; font-family:'Playfair Display', serif; font-size:1.15rem; font-weight:700; margin-bottom:0.4rem; letter-spacing:0.02em;">Acne & Surgical Scars</h3>
-        <div class="tcard-desc"><span style="color:var(--mint);font-weight:700">Skin Specialist</span> · Fractional laser resurfacing & microneedling RF for complete scar correction.</div>
-        <div class="click-more">Click for more Details →</div>
+        <h3 style="color:#fff; font-family:'Playfair Display', serif; font-size:1.15rem; font-weight:700; margin-bottom:0.3rem; letter-spacing:0.02em;">Acne & Surgical Scars</h3>
+        <div class="tcard-desc"><span style="color:var(--mint);font-weight:700">Skin Specialist</span> · Fractional laser resurfacing & RF scar remodeling.</div>
+        <span class="card-btn">Explore →</span>
       </div>
-      <div class="tcard-arrow" style="opacity:1;background:var(--mint);color:var(--navy);bottom:1.5rem;right:1rem;width:30px;height:30px">→</div>
     </div>
 
     <div class="tcard featured" data-cat="laser" onclick="location.href='laser-tattoo-removal-jayanagar.html'">
@@ -2248,11 +2264,10 @@ footer{
         <img src="tattoo-removal-hero.png" alt="Laser Tattoo Removal">
       </div>
       <div class="tcard-body">
-        <h3 style="color:#fff; font-family:'Playfair Display', serif; font-size:1.15rem; font-weight:700; margin-bottom:0.4rem; letter-spacing:0.02em;">Laser Tattoo Removal</h3>
-        <div class="tcard-desc"><span style="color:var(--mint);font-weight:700">Laser Specialist</span> · Q-switched Nd:YAG laser safely clears all pigment colours.</div>
-        <div class="click-more">Click for more Details →</div>
+        <h3 style="color:#fff; font-family:'Playfair Display', serif; font-size:1.15rem; font-weight:700; margin-bottom:0.3rem; letter-spacing:0.02em;">Laser Tattoo Removal</h3>
+        <div class="tcard-desc"><span style="color:var(--mint);font-weight:700">Laser Specialist</span> · Q-switched Nd:YAG laser clears all pigment colors.</div>
+        <span class="card-btn">Explore →</span>
       </div>
-      <div class="tcard-arrow" style="opacity:1;background:var(--mint);color:var(--navy);bottom:1.5rem;right:1rem;width:30px;height:30px">→</div>
     </div>
 
     <div class="tcard featured" data-cat="antiage" onclick="location.href='anti-aging-jayanagar.html'">
@@ -2260,11 +2275,10 @@ footer{
         <img src="anti-aging-fillers-hero.png" alt="Facial Rejuvenation">
       </div>
       <div class="tcard-body">
-        <h3 style="color:#fff; font-family:'Playfair Display', serif; font-size:1.15rem; font-weight:700; margin-bottom:0.4rem; letter-spacing:0.02em;">Facial Rejuvenation</h3>
-        <div class="tcard-desc"><span style="color:var(--mint);font-weight:700">Anti-Ageing</span> · Natural rejuvenation, wrinkle relaxation, and volume restoration.</div>
-        <div class="click-more">Click for more Details →</div>
+        <h3 style="color:#fff; font-family:'Playfair Display', serif; font-size:1.15rem; font-weight:700; margin-bottom:0.3rem; letter-spacing:0.02em;">Facial Rejuvenation</h3>
+        <div class="tcard-desc"><span style="color:var(--mint);font-weight:700">Anti-Ageing</span> · Wrinkle relaxation, volume contouring & skin renewal.</div>
+        <span class="card-btn">Explore →</span>
       </div>
-      <div class="tcard-arrow" style="opacity:1;background:var(--mint);color:var(--navy);bottom:1.5rem;right:1rem;width:30px;height:30px">→</div>
     </div>
 
     <div class="tcard featured" data-cat="skin" onclick="location.href='pigmentation-treatment-jayanagar.html'">
@@ -2272,11 +2286,10 @@ footer{
         <img src="https://assets.cdn.filesafe.space/pdoJMu1QFXjGcesXGXoj/media/69eb2d239fe87a9994945d23.jpeg" alt="Pigmentation Treatment">
       </div>
       <div class="tcard-body">
-        <h3 style="color:#fff; font-family:'Playfair Display', serif; font-size:1.15rem; font-weight:700; margin-bottom:0.4rem; letter-spacing:0.02em;">Pigmentation Treatment</h3>
-        <div class="tcard-desc"><span style="color:var(--mint);font-weight:700">Skin Specialist</span> · Multi-modal correction for melasma, sunspots, and uneven tone.</div>
-        <div class="click-more">Click for more Details →</div>
+        <h3 style="color:#fff; font-family:'Playfair Display', serif; font-size:1.15rem; font-weight:700; margin-bottom:0.3rem; letter-spacing:0.02em;">Pigmentation Treatment</h3>
+        <div class="tcard-desc"><span style="color:var(--mint);font-weight:700">Skin Specialist</span> · Clinical correction for melasma, sunspots & uneven tone.</div>
+        <span class="card-btn">Explore →</span>
       </div>
-      <div class="tcard-arrow" style="opacity:1;background:var(--mint);color:var(--navy);bottom:1.5rem;right:1rem;width:30px;height:30px">→</div>
     </div>
 
   </div>
