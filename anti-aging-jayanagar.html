@@ -557,6 +557,21 @@ footer{
 .menu-toggle{display:none;flex-direction:column;gap:5px;cursor:pointer;margin-left:1.5rem;}
 .menu-toggle span{width:24px;height:2px;background:#fff;transition:0.3s;}
 
+
+/* CONSULTATION CARD (DESKTOP) */
+.consultation-wrap{padding:0 5rem 3.5rem;max-width:1200px;margin:0 auto;box-sizing:border-box}
+.consultation-card{display:flex;justify-content:space-between;align-items:center;background:linear-gradient(135deg,rgba(11,31,58,0.98),rgba(20,45,80,0.96));padding:2rem 2.5rem;border-radius:14px;border:1px solid rgba(61,191,160,0.25);box-shadow:0 10px 30px rgba(0,0,0,0.18);gap:1.5rem;box-sizing:border-box}
+.consultation-info{display:flex;align-items:center;gap:1.2rem}
+.consultation-icon{background:rgba(61,191,160,0.15);border:1px solid rgba(61,191,160,0.3);width:52px;height:52px;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.consultation-badge{color:var(--mint);font-size:0.72rem;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;display:block}
+.consultation-title{color:#ffffff;font-family:'Playfair Display',serif;font-size:1.25rem;font-weight:500;margin:0.2rem 0;line-height:1.2}
+.consultation-sub{color:rgba(255,255,255,0.65);font-size:0.8rem;margin:0;line-height:1.35}
+.consultation-actions{display:flex;gap:0.8rem;align-items:center;flex-shrink:0}
+.btn-consult-wa{background:var(--mint);color:var(--navy);font-weight:700;font-size:0.82rem;padding:0.75rem 1.3rem;border-radius:7px;text-decoration:none;display:inline-flex;align-items:center;gap:0.4rem;transition:all 0.2s;box-shadow:0 4px 12px rgba(61,191,160,0.25)}
+.btn-consult-wa:hover{background:#34a98d;transform:translateY(-1px)}
+.btn-consult-call{color:#ffffff;text-decoration:none;font-size:0.82rem;font-weight:600;padding:0.72rem 1.1rem;border:1px solid rgba(255,255,255,0.25);border-radius:7px;display:inline-flex;align-items:center;gap:0.4rem;transition:all 0.2s}
+.btn-consult-call:hover{border-color:var(--mint);color:var(--mint)}
+
 @media(max-width:1024px){
     nav{padding:0 1rem; height:56px;}
   .nav-brand{gap:0.4rem}
@@ -593,12 +608,38 @@ footer{
   .offer-item{border-right:none;border-bottom:1px solid rgba(255,255,255,0.1);padding-bottom:1.5rem}
   .offer-item:last-child{border-bottom:none}
   .suitable-section,.treatments-section,.seo-section{padding:3rem 1.5rem}
-  footer{padding:4rem 1.5rem 2rem}
-  .footer-grid{grid-template-columns:1fr;gap:2.5rem;text-align:center}
-  .footer-brand p{margin:0 auto}
-  .footer-socials{justify-content:center}
-  .footer-bottom{flex-direction:column;gap:1.5rem;text-align:center}
-  .footer-legal{justify-content:center}
+  /* CONSULTATION CTA (MOBILE) */
+  .consultation-wrap{padding:0 1rem 1.8rem !important;box-sizing:border-box !important;width:100% !important;max-width:100% !important}
+  .consultation-card{padding:1.1rem 1rem !important;flex-direction:column !important;align-items:stretch !important;gap:0.85rem !important;border-radius:10px !important;box-sizing:border-box !important;width:100% !important}
+  .consultation-info{gap:0.8rem !important;align-items:center !important}
+  .consultation-icon{width:40px !important;height:40px !important}
+  .consultation-icon svg{width:20px !important;height:20px !important}
+  .consultation-badge{font-size:0.65rem !important}
+  .consultation-title{font-size:1.05rem !important;margin:0.15rem 0 !important}
+  .consultation-sub{font-size:0.72rem !important;display:block !important}
+  .consultation-actions{width:100% !important;display:grid !important;grid-template-columns:1fr 1fr !important;gap:0.5rem !important}
+  .btn-consult-wa,.btn-consult-call{width:100% !important;justify-content:center !important;text-align:center !important;padding:0.65rem 0.4rem !important;font-size:0.75rem !important;border-radius:6px !important;box-sizing:border-box !important}
+
+  /* COMPACT MOBILE RESPONSIVE FOOTER */
+  footer{padding:1.8rem 1rem 5.5rem !important;background:#080d16 !important}
+  .footer-grid{display:grid !important;grid-template-columns:1fr 1fr !important;gap:1.2rem 0.75rem !important;text-align:left !important;margin-bottom:1.2rem !important}
+  .footer-brand{grid-column:span 2 !important;text-align:center !important;padding-bottom:0.6rem !important;border-bottom:1px solid rgba(255,255,255,0.06) !important;margin-bottom:0 !important}
+  .footer-brand h3{font-size:1.3rem !important;margin-bottom:0.3rem !important}
+  .footer-brand p{font-size:0.74rem !important;line-height:1.35 !important;max-width:100% !important;margin:0 auto !important;color:rgba(255,255,255,0.6) !important}
+  .footer-socials{justify-content:center !important;margin-top:0.6rem !important;gap:0.5rem !important}
+  .social-icon{width:28px !important;height:28px !important}
+  .social-icon svg{width:14px !important;height:14px !important}
+  .footer-col{margin-bottom:0 !important}
+  .footer-col h4{font-size:0.68rem !important;letter-spacing:0.1em !important;margin-bottom:0.45rem !important;color:var(--mint) !important}
+  .footer-links{padding:0 !important;margin:0 !important;list-style:none !important}
+  .footer-links li{margin-bottom:0.32rem !important}
+  .footer-links a{font-size:0.74rem !important;line-height:1.2 !important;color:rgba(255,255,255,0.65) !important}
+  .footer-col:last-child{grid-column:span 2 !important;text-align:center !important;padding-top:0.6rem !important;border-top:1px solid rgba(255,255,255,0.06) !important}
+  .footer-contact{font-size:0.74rem !important;line-height:1.35 !important}
+  .footer-contact strong{font-size:0.78rem !important;margin-bottom:0.15rem !important}
+  .footer-bottom{padding-top:0.8rem !important;font-size:0.68rem !important;flex-direction:column !important;gap:0.35rem !important;text-align:center !important}
+  .footer-legal{display:flex !important;justify-content:center !important;gap:0.8rem !important}
+  .footer-legal a{color:rgba(255,255,255,0.4) !important;font-size:0.68rem !important}
 }
 
 /* ULTRA-CLEAN CLINICAL SVG ICONS */
@@ -973,21 +1014,24 @@ footer{
 
 <!-- OFFER BAR -->
 <!-- CONSULTATION CTA -->
-<div style="padding: 0 5rem 4rem;">
-  <div class="consultation-card reveal" style="display: flex; justify-content: space-between; align-items: center; background: linear-gradient(135deg, rgba(11, 31, 58, 0.98), rgba(20, 45, 80, 0.95)); padding: 2rem 3rem; border-radius: 14px; border: 1px solid rgba(255,255,255,0.12); flex-wrap: wrap; gap: 1.5rem; box-shadow: 0 10px 30px rgba(0,0,0,0.15);">
-    <div style="display: flex; align-items: center; gap: 1.2rem;">
-      <div style="background: rgba(61, 191, 160, 0.15); width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0;"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--mint)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4.8 2.3A.3.3 0 1 0 5 2H4a2 2 0 0 0-2 2v5a6 6 0 0 0 6 6v0a6 6 0 0 0 6-6V4a2 2 0 0 0-2-2h-1a.2.2 0 1 0 .3.3"/><path d="M8 15v1a6 6 0 0 0 6 6v0a6 6 0 0 0 6-6v-4"/><circle cx="20" cy="10" r="2"/></svg></div>
-      <div>
-        <span style="color: rgba(255,255,255,0.65); font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.08em; display: block; font-weight: 600;">Physician-Led Clinical Care</span>
-        <strong style="color: #ffffff; font-size: 1.3rem; font-family: 'Playfair Display', serif; display: block; margin-top: 0.2rem;">Personalized Dermatology Consultation</strong>
+<div class="consultation-wrap">
+  <div class="consultation-card reveal">
+    <div class="consultation-info">
+      <div class="consultation-icon">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--mint)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4.8 2.3A.3.3 0 1 0 5 2H4a2 2 0 0 0-2 2v5a6 6 0 0 0 6 6v0a6 6 0 0 0 6-6V4a2 2 0 0 0-2-2h-1a.2.2 0 1 0 .3.3"/><path d="M8 15v1a6 6 0 0 0 6 6v0a6 6 0 0 0 6-6v-4"/><circle cx="20" cy="10" r="2"/></svg>
+      </div>
+      <div class="consultation-text">
+        <span class="consultation-badge">Physician-Led Clinical Care</span>
+        <h3 class="consultation-title">Personalized Dermatology Consultation</h3>
+        <p class="consultation-sub">Direct evaluation with Dr. Deepak Devakar (18+ Yrs Exp)</p>
       </div>
     </div>
-    <div style="display: flex; gap: 1rem; align-items: center; flex-wrap: wrap;">
-      <button class="btn-primary" style="padding: 0.85rem 1.6rem; font-size: 0.95rem; display: flex; align-items: center; gap: 0.5rem; cursor: pointer;" onclick="window.open('https://wa.me/919916906661', '_blank')">
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" style="margin-right:4px;"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2zm.01 18.06c-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.17 8.17 0 0 1-1.25-4.29c0-4.52 3.68-8.2 8.2-8.2 2.19 0 4.25.85 5.8 2.4 1.55 1.55 2.41 3.61 2.41 5.8 0 4.52-3.68 8.15-8.17 8.15zm4.49-6.13c-.25-.13-1.47-.72-1.7-.81-.23-.08-.39-.13-.56.13-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.13-1.06-.39-2.02-1.24-.74-.66-1.25-1.48-1.39-1.73-.14-.25-.01-.39.11-.51.11-.11.25-.29.37-.43.13-.15.17-.25.25-.42.08-.17.04-.32-.02-.45-.06-.13-.56-1.35-.77-1.85-.2-.49-.4-.42-.56-.43-.14-.01-.31-.01-.47-.01-.17 0-.44.06-.67.31-.23.25-.88.86-.88 2.1 0 1.24.9 2.44 1.03 2.61.13.17 1.77 2.7 4.29 3.79.6.26 1.07.41 1.44.53.61.19 1.16.17 1.6.1.49-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.15-1.18-.06-.11-.22-.18-.47-.3z"/></svg> Book Consultation on WhatsApp
-      </button>
-      <a href="tel:+919916906661" style="color: #ffffff; text-decoration: none; font-size: 0.9rem; font-weight: 600; padding: 0.85rem 1.2rem; border: 1px solid rgba(255,255,255,0.25); border-radius: 8px; display: flex; align-items: center; gap: 0.4rem;">
-        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right:4px;"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg> Call Clinic
+    <div class="consultation-actions">
+      <a href="https://wa.me/919916906661" target="_blank" rel="noopener" class="btn-consult-wa">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2zm.01 18.06c-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.17 8.17 0 0 1-1.25-4.29c0-4.52 3.68-8.2 8.2-8.2 2.19 0 4.25.85 5.8 2.4 1.55 1.55 2.41 3.61 2.41 5.8 0 4.52-3.68 8.15-8.17 8.15zm4.49-6.13c-.25-.13-1.47-.72-1.7-.81-.23-.08-.39-.13-.56.13-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.13-1.06-.39-2.02-1.24-.74-.66-1.25-1.48-1.39-1.73-.14-.25-.01-.39.11-.51.11-.11.25-.29.37-.43.13-.15.17-.25.25-.42.08-.17.04-.32-.02-.45-.06-.13-.56-1.35-.77-1.85-.2-.49-.4-.42-.56-.43-.14-.01-.31-.01-.47-.01-.17 0-.44.06-.67.31-.23.25-.88.86-.88 2.1 0 1.24.9 2.44 1.03 2.61.13.17 1.77 2.7 4.29 3.79.6.26 1.07.41 1.44.53.61.19 1.16.17 1.6.1.49-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.15-1.18-.06-.11-.22-.18-.47-.3z"/></svg> WhatsApp Us
+      </a>
+      <a href="tel:+919916906661" class="btn-consult-call">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg> Call Clinic
       </a>
     </div>
   </div>
